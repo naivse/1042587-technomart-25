@@ -76,28 +76,30 @@
             <div class="about__left">
                 <h3 class="about__left-company">компания "техномарт"</h3>
                 <p class="about__left-text">Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для
-                    ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+                    ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
+                </p>
                 <p class="about__left-order">Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт
-                    работает со многими транспортными компаниями:</p>
-                <div class="about__left-shipping">
-                    <ul class="about__left-shipping-list">
-                        <li class="about__left-shipping-items">
-                            <a href="#" class="about__left-shipping-item">Деловые Линии</a>
-                        </li>
-                        <li class="about__left-shipping-items">
-                            <a href="#" class="about__left-shipping-item">Автотрейдинг</a>
-                        </li>
-                        <li class="about__left-shipping-items">
-                            <a href="#" class="about__left-shipping-item">ЖэлДорЭкспедиция</a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="btn about__left-order__btn">подробнее о компании</button>
+                    работает со многими транспортными компаниями:
+                </p>
+                <ul class="about__left-items">
+                    <li class="about__left-item">
+                        <a href="#" class="about__left-item-ref">Деловые Линии</a>
+                    </li>
+                    <li class="about__left-item">
+                        <a href="#" class="about__left-item-ref">Автотрейдинг</a>
+                    </li>
+                    <li class="about__left-item">
+                        <a href="#" class="about__left-item-ref">ЖэлДорЭкспедиция</a>
+                    </li>
+                </ul>
+                <button class="btn about__left-order__btn" type="submit">подробнее о компании</button>
             </div>
             <div class="about__right">
                 <h3 class="about__right-contacts">Контакты</h3>
                 <p class="about__right-offer">Вы можете забрать товар сами, заехав в наш офис:</p>
-                <img class="about__right-map" src="http://placehold.it/200x100" alt="our location">
+                <div class="map">
+                  <img class="about__right-map" src="http://placehold.it/200x100" alt="our location">
+                </div>
                 <button class="btn about__right-offer__btn">заблудились? напишите нам!</button>
             </div>
         </div>
@@ -105,81 +107,73 @@
 </main>
 <footer class="footer">
     <div class="footer-top">
-        <div class="container">
-            <div class="footer-top__nav">
-                <a href="index.html" class="footer-top__logo">
-                    <img src="http://placehold.it/100x50" alt="logo">
-                </a>
-                <ul class="footer-top__nav-list">
-                    <li class="footer-top__nav-items">
-                        <a href="#" class="footer-top__nav-item">Компания</a>
-                    </li>
-                    <li class="footer-top__nav-items">
-                        <a href="#" class="footer-top__nav-item">Новости</a>
-                    </li>
-                    <li class="footer-top__nav-items">
-                        <a href="catalog.html" class="footer-top__nav-item">Каталог</a>
-                    </li>
-                    <li class="footer-top__nav-items">
-                        <a href="#" class="footer-top__nav-item">Доставка</a>
-                    </li>
-                    <li class="footer-top__nav-items">
-                        <a href="#" class="footer-top__nav-item">Контакты</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container footer-top__nav">
+            <a href="index.html" class="footer-top__logo">
+                <img src="http://placehold.it/100x50" alt="logo">
+            </a>
+            <ul class="footer-top__nav-list">
+                <li class="footer-top__nav-items">
+                    <a href="#" class="footer-top__nav-item">Компания</a>
+                </li>
+                <li class="footer-top__nav-items">
+                    <a href="#" class="footer-top__nav-item">Новости</a>
+                </li>
+                <li class="footer-top__nav-items">
+                    <a href="catalog.html" class="footer-top__nav-item">Каталог</a>
+                </li>
+                <li class="footer-top__nav-items">
+                    <a href="#" class="footer-top__nav-item">Доставка</a>
+                </li>
+                <li class="footer-top__nav-items">
+                    <a href="#" class="footer-top__nav-item">Контакты</a>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="footer-middle">
-        <div class="container">
+        <div class="container footer-middle">
             <p class="footer-middle__address">
                 г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
                 +7 (812) 555-05-55
             </p>
-            <div class="footer-middle__nav">
-                <ul class="footer-middle__nav-list">
-                    <li class="footer-middle__nav-list-items">
-                        <a href="#" class="footer-middle__nav-list-item">Материалы</a>
-                    </li>
-                    <li class="footer-middle__nav-list-items">
-                        <a href="#" class="footer-middle__nav-list-item">Техника</a>
-                    </li>
-                    <li class="footer-middle__nav-list-items">
-                        <a href="#" class="footer-middle__nav-list-item">Инструмент</a>
-                    </li>
-                    <li class="footer-middle__nav-list-items">
-                        <a href="#" class="footer-middle__nav-list-item">Спецпредложения</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="footer-middle__nav">
+                <li class="footer-middle__nav-items">
+                    <a href="#" class="footer-middle__nav-item">Материалы</a>
+                </li>
+                <li class="footer-middle__nav-items">
+                    <a href="#" class="footer-middle__nav-item">Техника</a>
+                </li>
+                <li class="footer-middle__nav-items">
+                    <a href="#" class="footer-middle__nav-item">Инструмент</a>
+                </li>
+                <li class="footer-middle__nav-items">
+                    <a href="#" class="footer-middle__nav-item">Спецпредложения</a>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="container">
+        <div class="container footer-bottom">
             <p class="footer-bottom__copyright">© 2010–2019 Компания «Техномарт»<br>
                 Все права защищены
             </p>
-            <div class="footer-bottom__social-networks">
-                <div class="footer-bottom__social-networks-list">
-                    <ul class="footer-bottom__social-networks-items">
-                        <li class="footer-bottom__social-networks-item">
-                            <a href="#">
-                                <i class="fab fa-vk footer-bottom__social-networks-icon"></i>
-                            </a>
-                        </li>
-                        <li class="footer-bottom__social-networks-item">
-                            <a href="#">
-                                <i class="fab fa-facebook footer-bottom__social-networks-icon"></i>
-                            </a>
-                        </li>
-                        <li class="footer-bottom__social-networks-item">
-                            <a href="#">
-                                <i class="fab fa-instagram footer-bottom__social-networks-icon"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="footer-bottom__items">
+                <li class="footer-bottom__item">
+                    <a class="footer-bottom__item-ref" href="#">
+                        <i class="fab fa-vk footer-bottom__item-icon"></i>
+                    </a>
+                </li>
+                <li class="footer-bottom__item">
+                    <a class="footer-bottom__item-ref" href="#">
+                        <i class="fab fa-facebook footer-bottom__item-icon"></i>
+                    </a>
+                </li>
+                <li class="footer-bottom__item">
+                    <a class="footer-bottom__item-ref" href="#">
+                        <i class="fab fa-instagram footer-bottom__item-icon"></i>
+                    </a>
+                </li>
+            </ul>
             <div class="footer-bottom__feedback">
                 <p class="footer-bottom__feedback-text">
                     Обратная связь:
