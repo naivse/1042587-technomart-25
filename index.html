@@ -6,13 +6,14 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
-
 </head>
 <body>
 <header class="header">
   <div class="header-top">
     <div class="container">
-      <a class="header-top__logo"><img class="header-top__logo-img" src="img/logo.svg" width="136" height="21" alt="Логотип магазина техномарт"></a>
+      <a class="header-top__logo">
+        <img class="header-top__logo-img" src="img/logo.svg" width="136" height="21" alt="Логотип магазина техномарт">
+      </a>
       <form class="header-top__form" action="programm.php" method="post">
         <label class="header-top__form-label">Поиск:
           <input class="header-top__form-input" type="text" name="search">
@@ -199,16 +200,21 @@
     </div>
   </div>
 </footer>
+<div class="contact-us-map">
+  <div class="container contact-us-map">
+    <img src="img/map.png" alt="Как к нам проехать" class="contact-us-map__img">
+  </div>
+</div>
 <div class="contact-us">
   <div class="container contact-us">
-    <img class="contact-us__close-img" src="img/close.png" alt="Закрыть модальное окно">
+    <button class="contact-us__close-button">
+      <img class="contact-us__close-button-img" src="img/close.png" alt="Закрыть модальное окно">
+    </button>
     <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="contact-us-form__name">
         <label class="contact-us-form__name-label">Ваше имя:
           <input class="contact-us-form__name-input" type="text" name="login" placeholder="Имя Фамилия">
         </label>
-      </p>
-      <p class="contact-us-form__email">
         <label class="contact-us-form__email-label">Ваш e-mail:
           <input class="contact-us-form__email-input" type="text" name="email" placeholder="email@example.com">
         </label>
