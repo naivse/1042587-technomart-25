@@ -12,7 +12,9 @@
 <header class="header">
   <div class="header-top">
     <div class="container">
-      <a href="index.html" class="header-top__logo"><img class="header-top__logo-img" src="img/logo.svg" width="136" height="21" alt="Логотип магазина техномарт"></a>
+      <a class="header-top__logo" href="index.html">
+        <img class="header-top__logo-img" src="img/logo.svg" width="136" height="21" alt="Логотип магазина техномарт">
+      </a>
       <form class="header-top__form" action="programm.php" method="post">
         <label class="header-top__form-label">Поиск:
           <input class="header-top__form-input" type="text" name="search">
@@ -27,7 +29,7 @@
     <div class="container">
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <p class="header-main__info">
-        <a href="tel:+7-812-555-05-55" class="header-main__info-telephone">+7 (812) 555-05-55<br></a>
+        <a class="header-main__info-telephone" href="tel:+7-812-555-05-55">+7 (812) 555-05-55<br></a>
         <span class="header-main__info-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
       </p>
       <div class="header-main__user">
@@ -54,25 +56,25 @@
       <nav class="header-bottom__nav">
         <ul class="header-bottom__nav-list">
           <li class="header-bottom__nav-items">
-            <a href="index.html" class="header-bottom__nav-item">Главная</a>
+            <a class="header-bottom__nav-item" href="index.html">Главная</a>
           </li>
           <li class="header-bottom__nav-items">
-            <a href="#" class="header-bottom__nav-item">Компания</a>
+            <a class="header-bottom__nav-item" href="#">Компания</a>
           </li>
           <li class="header-bottom__nav-items">
-            <a href="catalog.html" class="header-bottom__nav-item">Каталог</a>
+            <a class="header-bottom__nav-item" href="catalog.html">Каталог</a>
           </li>
           <li class="header-bottom__nav-items">
-            <a href="#" class="header-bottom__nav-item">Новости</a>
+            <a class="header-bottom__nav-item" href="#">Новости</a>
           </li>
           <li class="header-bottom__nav-items">
-            <a href="#" class="header-bottom__nav-item">Спецпредложения</a>
+            <a class="header-bottom__nav-item" href="#">Спецпредложения</a>
           </li>
           <li class="header-bottom__nav-items">
-            <a href="#" class="header-bottom__nav-item">Доставка</a>
+            <a class="header-bottom__nav-item"href="#">Доставка</a>
           </li>
           <li class="header-bottom__nav-items">
-            <a href="#" class="header-bottom__nav-item">Контакты</a>
+            <a class="header-bottom__nav-item" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -84,17 +86,17 @@
     <div class="container">
       <ul class="breadcrumbs-nav">
         <li class="breadcrumbs-nav__items">
-          <a href="index.html" class="breadcrumbs-nav__items-link">
+          <a class="breadcrumbs-nav__items-link" href="index.html">
             <i class="fas fa-home breadcrumbs-nav__items-link__icon"></i>
           </a>
         </li>
         <li class="breadcrumbs-nav__items">
-          <a href="catalog.html" class="breadcrumbs-nav__items-link">
+          <a class="breadcrumbs-nav__items-link" href="catalog.html">
             Каталог
           </a>
         </li>
         <li class="breadcrumbs-nav__items">
-          <a href="tools.html" class="breadcrumbs-nav__items-link">
+          <a class="breadcrumbs-nav__items-link" href="tools.html">
             Инструмент
           </a>
         </li>
@@ -117,7 +119,7 @@
     <!-- фильтр товаров + форма-->
     <div class="container">
       <div class="main-content-filter">
-        <form action="https://echo.htmlacademy.ru" class="main-content-filter__brand" method="post">
+        <form class="main-content-filter__brand" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-content-filter__brand-fieldset">
             <legend class="main-content-filter__brand-title">
               производители:
@@ -125,38 +127,38 @@
               <ul class="main-content-filter__brand-list">
                 <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
                   <label class="main-content-filter__brand-items-label">
-                    <input type="checkbox" class="main-content-filter__brand-items-input" value="bosch" checked>
+                    <input class="main-content-filter__brand-items-input" type="checkbox" value="bosch" checked>
                     bosch
                   </label>
                 </li>
                 <li class="main-content-filter__brand-items">
                   <label class="main-content-filter__brand-items-label">
-                    <input type="checkbox" class="main-content-filter__brand-items-input" value="интерскол">
+                    <input class="main-content-filter__brand-items-input" type="checkbox" value="интерскол">
                     интерскол
                   </label>
                 </li>
                 <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
                   <label class="main-content-filter__brand-items-label">
-                    <input type="checkbox" class="main-content-filter__brand-items-input" name="makita" checked>
+                    <input class="main-content-filter__brand-items-input" type="checkbox" name="makita" checked>
                     makita
                   </label>
                 </li>
                 <li class="main-content-filter__brand-items">
                   <label class="main-content-filter__brand-items-label">
-                    <input type="checkbox" class="main-content-filter__brand-items-input" name="dewalt">
+                    <input class="main-content-filter__brand-items-input" type="checkbox" name="dewalt">
                     dewalt
                   </label>
                 </li>
                 <li class="main-content-filter__brand-items">
                   <label class="main-content-filter__brand-items-label">
-                    <input type="checkbox" class="main-content-filter__brand-items-input" name="hitachi">
+                    <input class="main-content-filter__brand-items-input" type="checkbox"  name="hitachi">
                     hitachi
                   </label>
                 </li>
               </ul>
           </fieldset>
         </form>
-        <form action="https://echo.htmlacademy.ru" class="main-content-filter__type" method="post">
+        <form class="main-content-filter__type" action="https://echo.htmlacademy.ru"  method="post">
           <fieldset class="main-content-filter__type-fieldset">
             <legend class="main-content-filter__type-title">
               питание:
@@ -164,13 +166,13 @@
               <ul class="main-content-filter__type-list">
                 <li class="main-content-filter__type-items">
                   <label class="main-content-filter__type-items-label">
-                    <input type="checkbox" class="main-content-filter__type-items-input" name="аккумуляторные">
+                    <input class="main-content-filter__type-items-input" type="checkbox" name="аккумуляторные">
                       аккумуляторные
                   </label>
                 </li>
                 <li class="main-content-filter__type-items">
                   <label class="main-content-filter__type-items-label">
-                    <input type="checkbox" class="main-content-filter__type-items-input" name="сетевые">
+                    <input class="main-content-filter__type-items-input" type="checkbox" name="сетевые">
                       сетевые
                   </label>
                 </li>
@@ -358,7 +360,7 @@
               </a>
             </h3>
             <p class="main-content-catalog__item-image">
-              <a class="main-content-catalog__item-image-ref" href="catalog-item.html">
+              <a class="main-content-catalog__item-image-ref" href="//catalog-item.html">
                 <img class="main-content-catalog__item-image-main" src="img/item-9.png" width="218" height="170"
                      alt="Перфоратор BOSCH">
               </a>
@@ -464,7 +466,7 @@
 </footer>
 <div class="basket-add">
   <div class="container basket-add">
-    <img class="basket-add__close-img" src="img/close.svg" alt="Закрыть модальное окно">
+    <img class="basket-add__close-img" src="img/close.png" alt="Закрыть модальное окно">
     <p class="basket-add__inner">
       <img class="basket-add__inner-icon" src="img/mark.svg" alt="Товар добавлен в корзину">
       <span class="basket-add__inner-title">
