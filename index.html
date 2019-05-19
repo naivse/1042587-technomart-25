@@ -12,9 +12,11 @@
 <header class="header">
   <div class="header-top">
     <div class="container">
-      <a class="header-top__logo"><img class="header-top__logo-img" src="img/logo.svg" width="136" height="21" alt="Логотип техномарт"></a>
-      <form class="header-top__form" action="programm.php" method="get">
-        <input class="header-top__form-input" type="text" name="search">Поиск</input>
+      <a class="header-top__logo"><img class="header-top__logo-img" src="img/logo.svg" width="136" height="21" alt="Логотип магазина техномарт"></a>
+      <form class="header-top__form" action="programm.php" method="post">
+        <label class="header-top__form-label">Поиск:
+          <input class="header-top__form-input" type="text" name="search">
+        </label>
       </form>
       <a class="header-top__bookmarks" href="bookmarks.html">Закладки:0</a>
       <a class="header-top__basket" href="basket.html">Корзина:0</a>
@@ -30,10 +32,14 @@
       </p>
       <ul class="header-main__user">
         <li class="header-main__user-enter">
+          <a class="header-main__user-enter-ref" href="enter.html">
           Войти
+          </a>
         </li>
         <li class="header-main__user-registration">
+          <a href="registration.html" class="header-main__user-registration-ref">
           Регистрация
+          </a>
         </li>
       </ul>
     </div>
@@ -101,6 +107,7 @@
         </div>
         <a class="about__right-offer-find-us">заблудились? напишите нам!</a>
       </div>
+      форма?
     </div>
   </section>
 </main>
@@ -159,17 +166,17 @@
       <ul class="footer-bottom__items">
         <li class="footer-bottom__item">
           <a class="footer-bottom__item-ref" href="#">
-            <img class="footer-bottom__item-icon" src="img/vk.png" width="26" height="15" alt="vk">
+            <img class="footer-bottom__item-icon" src="img/vk.svg" width="26" height="15" alt="vk">
           </a>
         </li>
         <li class="footer-bottom__item">
           <a class="footer-bottom__item-ref" href="#">
-            <img class="footer-bottom__item-icon" src="img/fb.png" width="12" height="22" alt="facebook">
+            <img class="footer-bottom__item-icon" src="img/fb.svg" width="12" height="22" alt="facebook">
           </a>
         </li>
         <li class="footer-bottom__item">
           <a class="footer-bottom__item-ref" href="#">
-            <img class="footer-bottom__item-icon" src="img/insta.png" width="21" height="21" alt="instagramm">
+            <img class="footer-bottom__item-icon" src="img/insta.svg" width="21" height="21" alt="instagramm">
           </a>
         </li>
       </ul>
@@ -192,5 +199,30 @@
     </div>
   </div>
 </footer>
+<div class="contact-us">
+  <div class="container contact-us">
+    <img class="contact-us__close-img" src="img/close.svg" alt="Закрыть модальное окно">
+    <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="contact-us-form__name">
+        <label class="contact-us-form__name-label">Ваше имя:
+          <input class="contact-us-form__name-input" type="text" name="login" placeholder="Имя Фамилия">
+        </label>
+      </p>
+      <p class="contact-us-form__email">
+        <label class="contact-us-form__email-label">Ваш e-mail:
+          <input class="contact-us-form__email-input" type="text" name="email" placeholder="email@example.com">
+        </label>
+      </p>
+      <p class="contact-us-form__text">
+        <label class="contact-us-form__text-label">Текст письма:
+          <input class="contact-us-form__text-input" type="text" name="text" placeholder="В свободной форме">
+        </label>
+      </p>
+      <button class="btn contact-us-form__btn" type="submit">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>
 </body>
 </html>
