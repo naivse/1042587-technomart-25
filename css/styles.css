@@ -7,7 +7,6 @@ body {
   font-size: 18px;
   line-height: 18px;
   color: #fff;
-  text-transform: uppercase;
 
   background: #fff;
 }
@@ -21,6 +20,14 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  text-transform: uppercase;
+}
+
+.visible-hidden {
+  display: none;
+}
+
 .header-top {
   background-color: #293449;
 }
@@ -29,13 +36,17 @@ a {
   background-color: #ee3643;
 }
 
+.header-top__form-input[type="text"] {
+  background-color: #293449;
+  border-color: transparent;
+}
+
 .header-top__order {
   background-color: #63a63e;
 }
 
-.header-top__form-input[type="text"] {
-  background-color: #293449;
-  border-color: transparent;
+.header-main {
+  background-color: #f4f7f9;
 }
 
 .header-main__title {
@@ -46,9 +57,179 @@ a {
 }
 
 .header-main__info {
-  border: 1px solid black;
+  border: 3px solid #ffffff;
+  text-align: center;
 }
 
+.header-main__info-telephone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-main__info-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.header-main__user-enter,
+.header-main__user-registration{
+  list-style: none;
+}
+
+.header-main__user-enter-ref,
+.header-main__user-registration-ref {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  border: 1px solid black;
+  padding: 15px 30px;
+}
+
+.header-bottom {
+  background-color: #32425c;
+}
+
+.header-bottom__nav-items {
+  list-style: none;
+}
+
+.header-bottom__nav-item {
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.about {
+  background-color: #ffffff;
+}
+
+.about__left-company {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.about__left-text,
+.about__left-order {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000;
+}
+
+.about__left-item {
+  list-style: none;
+}
+
+.about__left-item-ref {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+}
+
+.about__left-order__btn {
+  width: 220px;
+  height: 38px;
+  font-size: 14px;
+  background-color: #ee3643;
+  border-color: transparent;
+  color: #fff;
+}
+
+.about__right-contacts {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.about__right-offer {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000;
+}
+
+.about__right-offer-find-us {
+  display: inline-block;
+  width: 300px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+  color: #fff;
+  text-align: center;
+}
+
+.about__right-offer-find-us-text {
+  vertical-align: center;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #32425c;
+}
+
+.footer-top__logo-img {
+ background-color: #ee3643;
+}
+
+.footer-top__nav-items,
+.footer-middle__nav-items,
+.footer-bottom__items {
+  list-style: none;
+}
+
+.footer-top__nav-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-middle__address-street,
+.footer-middle__address-telephone {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-middle__nav-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom__copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.footer-bottom__items {
+  text-align: center;
+}
+.footer-bottom__feedback-text,
+.footer-bottom__developers-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.footer-bottom__feedback-mail,
+.footer-bottom__developers-site {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
 
 
 
