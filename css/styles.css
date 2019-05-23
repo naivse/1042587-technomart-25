@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+.img {
+  max-width: 100%;
+}
+
 .btn {
   text-transform: uppercase;
 }
@@ -28,8 +36,16 @@ a {
   display: none;
 }
 
+.header {
+  background-color: #f2f6f8;
+}
+
 .header-top {
   background-color: #293449;
+}
+
+.header-top:hover {
+  background-color: #212a3a;
 }
 
 .header-top__logo-img {
@@ -49,6 +65,22 @@ a {
   border-color: transparent;
 }
 
+.header-top__form-label:active {
+  color: #151515;
+}
+
+.header-top__form-input:active {
+  background-color: #ffffff;
+}
+
+.header-top__bookmarks:active {
+  background-color: #161d29;
+}
+
+.header-top__basket:active {
+  background-color: #161d29;
+}
+
 .header-top__order {
   background-color: #63a63e;
 }
@@ -59,10 +91,6 @@ a {
 
 .header-top__order:active {
   background-color: #518534;
-}
-
-.header-main {
-  background-color: #f4f7f9;
 }
 
 .header-main__title {
@@ -100,13 +128,19 @@ a {
   line-height: 21px;
   color: #000;
   border: 1px solid black;
-  padding: 15px 30px;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 .header-main__user-enter-ref:hover,
 .header-main__user-registration-ref:hover {
-  background-color: #f15964;
+  color: #f15964;
 }
+.header-main__user-enter-ref:active,
+.header-main__user-registration-ref:active {
+  color: #c9c9c9;
+}
+
 
 .header-bottom {
   background-color: #32425c;
@@ -116,10 +150,22 @@ a {
   list-style: none;
 }
 
+.header-bottom__nav-items:hover {
+  background-color: #293449;
+}
+
+.header-bottom__nav-items:active {
+  background-color: #1d2739;
+}
+
 .header-bottom__nav-item {
   font-size: 17px;
   line-height: 17px;
-  color: #fff;
+  color: #f1f2f4;
+}
+
+.header-bottom__nav-item:active {
+  color: #868b95;
 }
 
 .about {
@@ -212,6 +258,14 @@ a {
   color: #f1f5f7;
 }
 
+.footer-top__nav-item:hover {
+  text-decoration: underline;
+}
+
+.footer-top__nav-item:active {
+  color: #7f8b9b;
+}
+
 .footer-middle__address-street,
 .footer-middle__address-telephone {
   font-size: 18px;
@@ -223,6 +277,14 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
+}
+
+.footer-middle__nav-item:hover {
+  text-decoration: underline;
+}
+
+.footer-middle__nav-item:active {
+  color: #98896e;
 }
 
 .footer-bottom {
@@ -238,6 +300,7 @@ a {
 .footer-bottom__items {
   text-align: center;
 }
+
 .footer-bottom__feedback-text,
 .footer-bottom__developers-text {
   font-size: 16px;
@@ -252,7 +315,116 @@ a {
   color: #ffd180;
 }
 
+.footer-bottom__feedback-mail:hover,
+.footer-bottom__developers-site:hover {
+  text-decoration: underline;
+}
 
+.footer-bottom__feedback-mail:active,
+.footer-bottom__developers-site:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+
+
+/* catalog page */
+
+.header-top__basket--not-empty {
+  background-color: #ee3643;
+}
+
+.header-main__user-name {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000;
+  border: 1px solid transparent;
+  background-color: #fff;
+  padding: 10px 30px;
+}
+
+/*.header-main__user-orders {*/
+  /*list-style: none;*/
+/*}*/
+
+.header-main__user-orders,
+.header-main__user-room {
+  text-decoration: underline;
+  list-style: none;
+}
+
+
+.header-main__user-orders-ref,
+.header-main__user-room-ref {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.breadcrumbs-nav__items-link-img {
+  color: #c1c6ce;
+}
+
+.breadcrumbs-nav__items-link,
+.breadcrumbs-nav__items-link__current {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-title {
+  background-color: #f2f6f8;
+}
+
+.catalog-title__main {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  padding: 32px 0 32px 32px;
+}
+
+.main-content-filter__brand-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main-content-filter__brand-items-label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main-content-filter__type-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main-content-filter__type-items-label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
 
 
 
