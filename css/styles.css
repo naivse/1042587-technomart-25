@@ -8,18 +8,12 @@ body {
 
   font-family: "Cuprum", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
   color: #fff;
 
   background: #fff;
 }
 
 a {
-  font-family: "Cuprum", sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 18px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -50,14 +44,17 @@ a {
 
 .header-top__logo-img {
   background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .header-top__logo-img:hover {
   background-color: #ca2c37;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.header-top__logo-img:active {
+.header-top__logo-img:focus {
   background-color: #ba2732;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .header-top__form-input[type="text"] {
@@ -65,19 +62,19 @@ a {
   border-color: transparent;
 }
 
-.header-top__form-label:active {
+.header-top__form-label:focus {
   color: #151515;
 }
 
-.header-top__form-input:active {
+.header-top__form-input:focus {
   background-color: #ffffff;
 }
 
-.header-top__bookmarks:active {
+.header-top__bookmarks:focus {
   background-color: #161d29;
 }
 
-.header-top__basket:active {
+.header-top__basket:focus {
   background-color: #161d29;
 }
 
@@ -89,7 +86,7 @@ a {
   background-color: #5fbb2d;
 }
 
-.header-top__order:active {
+.header-top__order:focus {
   background-color: #518534;
 }
 
@@ -136,14 +133,15 @@ a {
 .header-main__user-registration-ref:hover {
   color: #f15964;
 }
-.header-main__user-enter-ref:active,
-.header-main__user-registration-ref:active {
+.header-main__user-enter-ref:focus,
+.header-main__user-registration-ref:focus {
   color: #c9c9c9;
 }
 
 
 .header-bottom {
   background-color: #32425c;
+  box-shadow: inset 0 -5px 0 #293449;
 }
 
 .header-bottom__nav-items {
@@ -154,7 +152,7 @@ a {
   background-color: #293449;
 }
 
-.header-bottom__nav-items:active {
+.header-bottom__nav-items:focus {
   background-color: #1d2739;
 }
 
@@ -164,7 +162,7 @@ a {
   color: #f1f2f4;
 }
 
-.header-bottom__nav-item:active {
+.header-bottom__nav-item:focus {
   color: #868b95;
 }
 
@@ -243,7 +241,8 @@ a {
 }
 
 .footer-top__logo-img {
- background-color: #ee3643;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .footer-top__nav-items,
@@ -262,7 +261,7 @@ a {
   text-decoration: underline;
 }
 
-.footer-top__nav-item:active {
+.footer-top__nav-item:focus {
   color: #7f8b9b;
 }
 
@@ -283,7 +282,7 @@ a {
   text-decoration: underline;
 }
 
-.footer-middle__nav-item:active {
+.footer-middle__nav-item:focus {
   color: #98896e;
 }
 
@@ -320,8 +319,8 @@ a {
   text-decoration: underline;
 }
 
-.footer-bottom__feedback-mail:active,
-.footer-bottom__developers-site:active {
+.footer-bottom__feedback-mail:focus,
+.footer-bottom__developers-site:focus {
   color: #ee3643;
   text-decoration: none;
 }
@@ -336,7 +335,6 @@ a {
 
 .header-main__user-name {
   font-size: 21px;
-  font-weight: 400;
   line-height: 21px;
   color: #000;
   border: 1px solid transparent;
@@ -358,9 +356,18 @@ a {
 .header-main__user-orders-ref,
 .header-main__user-room-ref {
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   color: #32425c;
+}
+
+.header-main__user-orders-ref:hover,
+.header-main__user-room-ref:hover {
+  color: #ee3643;
+}
+
+.header-main__user-orders-ref:focus,
+.header-main__user-room-ref:focus {
+  color: #bbc3cb;
 }
 
 .breadcrumbs-nav__items-link-img {
@@ -371,7 +378,6 @@ a {
 .breadcrumbs-nav__items-link__current {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
-  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
@@ -383,7 +389,6 @@ a {
 
 .catalog-title__main {
   font-size: 30px;
-  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
@@ -402,10 +407,13 @@ a {
 .main-content-filter__brand-items-label {
   font-family: "PT Sans", sans-serif;
   font-size: 15px;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: #000;
+}
+
+.main-content-filter__brand-items-label:disabled{
+  opacity: 0.4;
 }
 
 .main-content-filter__type-title {
@@ -420,11 +428,101 @@ a {
 .main-content-filter__type-items-label {
   font-family: "PT Sans", sans-serif;
   font-size: 15px;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: #000;
 }
+
+.main-content-filter__btn {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  width: 140px;
+  height: 38px;
+}
+
+/* карточка товарв */
+
+
+.main-content-catalog__item-ref {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+
+.main-content-catalog__item-old-price {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.main-content-catalog__item-new-price {
+  border: 1px solid #ee3643;
+  background-color: #ee3643;
+}
+
+.main-content-catalog__item-new-price-ref {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main-content-catalog__item-user-buy {
+  width: 135px;
+  height: 38px;
+  box-shadow: inset 0 -3px 0 #367315;
+  background-color: #63a63e;
+  text-align: center;
+}
+
+.main-content-catalog__item-user-buy:hover {
+  background-color: #5fbb2d;
+  box-shadow: inset 0 -3px 0 #367315;
+}
+
+.main-content-catalog__item-user-buy:focus {
+  background-color: #518534;
+}
+
+.main-content-catalog__item-user-bookmarks {
+  width: 130px;
+  height: 35px;
+  border: 3px solid #63a63e;
+  text-align: center;
+}
+
+.main-content-catalog__item-user-bookmarks:hover {
+  border: 3px solid #32425c;
+}
+
+.main-content-catalog__item-user-bookmarks:focus {
+  border: 3px solid #32425c;
+  opacity: 0.3;
+}
+
+.main-content-catalog__item-user-activity-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+.main-content-catalog__item-user-activity-bookmarks:hover {
+  color: #32425c;
+}
+
+.main-content-catalog__item-user-activity-bookmarks:focus {
+  color: #32425c;
+  opacity: 0.3;
+}
+
 
 
 
