@@ -36,6 +36,14 @@ a {
   background-color: #ee3643;
 }
 
+.header-top__logo-img:hover {
+  background-color: #ca2c37;
+}
+
+.header-top__logo-img:active {
+  background-color: #ba2732;
+}
+
 .header-top__form-input[type="text"] {
   background-color: #293449;
   border-color: transparent;
@@ -43,6 +51,14 @@ a {
 
 .header-top__order {
   background-color: #63a63e;
+}
+
+.header-top__order:hover {
+  background-color: #5fbb2d;
+}
+
+.header-top__order:active {
+  background-color: #518534;
 }
 
 .header-main {
@@ -85,6 +101,11 @@ a {
   color: #000;
   border: 1px solid black;
   padding: 15px 30px;
+}
+
+.header-main__user-enter-ref:hover,
+.header-main__user-registration-ref:hover {
+  background-color: #f15964;
 }
 
 .header-bottom {
