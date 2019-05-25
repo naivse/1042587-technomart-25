@@ -60,12 +60,11 @@ a {
 .header-top__form-input[type="text"] {
   background-color: #293449;
   border-color: transparent;
-  text-transform: capitalize; /* здесь по меому другое свойство нужно */
 }
 
-/*.header-top__form-label:focus {*/
-  /*color: #151515;*/
-/*}*/
+.header-top__form-input[type="text"]::first-letter {
+  text-transform: uppercase;  /* ? */
+}
 
 .header-top__form-input[placeholder]::-webkit-input-placeholder {
   font-size: 17px;
@@ -147,7 +146,6 @@ a {
   display: flex;
   flex-direction: row;
   min-width: 280px ;
-  justify-content: ;
 }
 
 .header-main__user-enter {
