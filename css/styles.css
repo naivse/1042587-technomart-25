@@ -30,6 +30,12 @@ a {
   display: none;
 }
 
+.container  {
+  width: 940px;
+  display:flex;
+  margin: 0 auto;
+}
+
 .header {
   background-color: #f2f6f8;
 }
@@ -60,6 +66,7 @@ a {
 .header-top__form-input[type="text"] {
   background-color: #293449;
   border-color: transparent;
+  margin-left: 50px;
 }
 
 .header-top__form-input[type="text"]::first-letter {
@@ -108,6 +115,7 @@ a {
 
 .header-top__order {
   background-color: #63a63e;
+
 }
 
 .header-top__order:hover {
@@ -149,22 +157,24 @@ a {
 }
 
 .header-main__user-enter {
-  width: 120px;
+  width: 121px;
   border: 1px solid black;
-  padding: 15px 25px;
   text-align: center;
 }
 
 .header-main__user-registration {
   width: 150px;
   border: 1px solid black;
-  padding: 15px 25px;
   text-align: center;
 }
 
 .header-main__user-enter,
 .header-main__user-registration{
   list-style: none;
+}
+
+.header-main__user-enter {
+  margin-right:10px;
 }
 
 .header-main__user-enter-ref,
@@ -187,6 +197,17 @@ a {
 .header-bottom {
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 #293449;
+}
+
+.header-bottom__nav {
+  width: 940px;
+  min-height: 60px;
+}
+
+.header-bottom__nav-list {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
 }
 
 .header-bottom__nav-items {
@@ -596,6 +617,10 @@ a {
   border: 3px solid #32425c;
   opacity: 0.3;
 }
+
+
+/* сетка */
+
 
 
 
