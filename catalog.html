@@ -12,7 +12,7 @@
 <body>
 <header class="header">
   <div class="header-top">
-    <div class="container">
+    <div class="container flex--between">
       <a class="header-top__logo" href="index.html">
         <img class="header-top__logo-img" src="img/logo.svg" width="136.5" height="21.59" alt="Логотип магазина техномарт">
       </a>
@@ -27,7 +27,7 @@
     </div>
   </div>
   <div class="header-main">
-    <div class="container">
+    <div class="container flex--between">
       <h1 class="header-main__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <p class="header-main__info">
         <a class="header-main__info-telephone" href="tel:+7-812-555-05-55">+7 (812) 555-05-55<br></a>
@@ -52,7 +52,7 @@
       </div>
     </div>
   </div>
-  <div class="header-bottom">
+  <div class="header-bottom flex--around">
     <div class="container">
       <nav class="header-bottom__nav">
         <ul class="header-bottom__nav-list">
@@ -118,7 +118,7 @@
   </section>
   <section class="main-content">
     <!-- фильтр товаров + форма-->
-    <div class="container">
+    <div class="container flex--between--catalog">
       <div class="main-content-filter">
         <form class="main-content-filter__brand" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-content-filter__brand-fieldset">
@@ -180,8 +180,8 @@
           <button class="btn main-content-filter__btn" type="submit">показать</button>
         </form>
       </div>
-    </div>
-    <div class="container">
+
+
       <div class="main-content-catalog">
         <h2 class="visible-hidden">Каталог товаров магазина "Техномарт"</h2>
         <ul class="main-content-catalog__list">
@@ -377,7 +377,7 @@
 </main>
 <footer class="footer">
   <div class="footer-top">
-    <div class="container footer-top__nav">
+    <div class="container footer-top__nav flex--between">
       <a href="index.html" class="footer-top__logo">
         <img class="footer-top__logo-img" src="img/logo.svg" width="136.5" height="21.59" alt="Логотип магазина техномарт">
       </a>
@@ -401,7 +401,7 @@
     </div>
   </div>
   <div class="footer-middle">
-    <div class="container footer-middle">
+    <div class="container footer-middle flex--between">
       <p class="footer-middle__address">
         <span class="footer-middle__address-street">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br></span>
         <a href="tel:+7-812-555-05-55" class="footer-middle__address-telephone">+7 (812) 555-05-55</a>
@@ -423,23 +423,23 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container footer-bottom">
+    <div class="container footer-bottom flex--between">
       <p class="footer-bottom__copyright">© 2010–2019 Компания «Техномарт»<br>
         Все права защищены
       </p>
       <ul class="footer-bottom__items">
         <li class="footer-bottom__item">
-          <a class="footer-bottom__item-ref" href="#">
+          <a class="footer-bottom__item-ref footer-bottom__item--vk" href="#">
             <img class="footer-bottom__item-icon" src="img/vk.svg" width="26" height="15" alt="vk"><span class="visible-hidden">vkontakte</span>
           </a>
         </li>
         <li class="footer-bottom__item">
-          <a class="footer-bottom__item-ref" href="#">
+          <a class="footer-bottom__item-ref footer-bottom__item--fb" href="#">
             <img class="footer-bottom__item-icon" src="img/fb.svg" width="12" height="22" alt="facebook"><span class="visible-hidden">facebook</span>
           </a>
         </li>
         <li class="footer-bottom__item">
-          <a class="footer-bottom__item-ref" href="#">
+          <a class="footer-bottom__item-ref footer-bottom__item--inst" href="#">
             <img class="footer-bottom__item-icon" src="img/insta.svg" width="21" height="21" alt="instagramm"><span class="visible-hidden">instagramm</span>
           </a>
         </li>
@@ -455,9 +455,9 @@
       <div class="footer-bottom__developers">
         <p class="footer-bottom__developers-text">
           Разработано -
-          <span class="footer-bottom__developers-site">
-                        htmlacademy.ru
-                    </span>
+          <a class="footer-bottom__developers-site" href="https://htmlacademy.ru/intensive/htmlcss">
+            htmlacademy.ru
+          </a>
         </p>
       </div>
     </div>
