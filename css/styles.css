@@ -50,11 +50,6 @@ a {
   align-items: center;
 }
 
-.flex--between--catalog {
-  display: flex;
-  justify-content: space-between;
-}
-
 /* padding is null*/
 
 .footer-bottom__items,
@@ -166,21 +161,30 @@ a {
 }
 
 .header-main__info {
-  border: 3px solid #ffffff;
-  text-align: center;
-  width: 270px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .header-main__info-telephone {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  border: 3px solid #ffffff;
+  width: 270px;
+  min-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-main__info-address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-main__user {
@@ -495,19 +499,33 @@ a {
   background-color: #ee3643;
 }
 
+.header-main__user-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-main__user-name {
   font-size: 21px;
   line-height: 21px;
   color: #000;
   border: 1px solid transparent;
   background-color: #fff;
-  padding: 10px 30px;
+  padding: 14px 69px 11px 47px;
 }
 
-/*.header-main__user-orders {*/
-  /*list-style: none;*/
-/*}*/
+.header-main__user-info  {
+  display: flex;
+  flex-direction: row;
+  width: 210px;
+  padding-left: 17px;
+  padding-right: 47px;
 
+}
+
+
+.header-main__user-orders {
+  margin-right: 30px;
+}
 .header-main__user-orders,
 .header-main__user-room {
   text-decoration: underline;
@@ -553,16 +571,16 @@ a {
   background-color: #f2f6f8;
 }
 
-/*.catalog-title  .container {*/
-  /*background-color: #f2f6f8;*/
-/*}*/
-
 .catalog-title__main {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
   padding: 32px 0 32px 32px;
+}
+
+.main-content .flex--between {
+  align-items: flex-start;
 }
 
 .main-content-filter {
@@ -654,20 +672,20 @@ a {
 .main-content-catalog__item-new-price {
   border: 1px solid #ee3643;
   background-color: #ee3643;
-}
-
-.main-content-catalog__item-new-price-ref {
   font-family: "PT Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
   color: #fff;
+  display: block;
 }
 
 .main-content-catalog__item-user {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content-catalog__item-user-buy {
@@ -679,8 +697,11 @@ a {
   border: 3px solid #63a63e;
   text-align: center;
   width: 135px;
-  padding: 15px 45px;
+  min-height: 38px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content-catalog__item-user-buy:hover {
@@ -699,8 +720,11 @@ a {
   border: 3px solid #63a63e;
   text-align: center;
   width: 135px;
-  padding: 15px 45px;
+  min-height: 38px;
   color: #32425c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-content-catalog__item-user-bookmarks:hover {
