@@ -274,7 +274,6 @@ a {
 }
 
 .about__left-company {
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 24px;
   color: #000;
@@ -336,10 +335,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.about__right-offer-find-us-text {
-  vertical-align: center;
   text-transform: uppercase;
 }
 
