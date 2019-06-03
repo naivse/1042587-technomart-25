@@ -33,9 +33,10 @@
         <span class="header-main__info-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
       </p>
       <div class="header-main__user-catalog">
-        <p class="header-main__user-name">
+        <a class="header-main__user-name" href="personalroom.html">
         Равшан Джамшутович
-        </p>
+        </a>
+        <a class="header-main__user-name-logout" href="autorization.html"></a>
         <ul class="header-main__user-info">
           <li class="header-main__user-orders">
             <a class="header-main__user-orders-ref" href="orders.html">
@@ -118,63 +119,50 @@
   <section class="main-content">
     <!-- фильтр товаров + форма-->
     <div class="container flex--between">
-      <div class="main-content-filter">
+      <div class="main-con
+      tent-filter">
         <form class="main-content-filter__brand" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-content-filter__brand-fieldset">
             <legend class="main-content-filter__brand-title">
               производители:
             </legend>
-              <ul class="main-content-filter__brand-list">
-                <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
-                  <label class="main-content-filter__brand-items-label">
-                    <input class="main-content-filter__brand-items-input" type="checkbox" value="bosch" checked>
-                    bosch
-                  </label>
-                </li>
-                <li class="main-content-filter__brand-items">
-                  <label class="main-content-filter__brand-items-label">
-                    <input class="main-content-filter__brand-items-input" type="checkbox" value="интерскол">
-                    интерскол
-                  </label>
-                </li>
-                <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
-                  <label class="main-content-filter__brand-items-label">
-                    <input class="main-content-filter__brand-items-input" type="checkbox" name="makita" checked>
-                    makita
-                  </label>
-                </li>
-                <li class="main-content-filter__brand-items">
-                  <label class="main-content-filter__brand-items-label">
-                    <input class="main-content-filter__brand-items-input" type="checkbox" name="dewalt">
-                    dewalt
-                  </label>
-                </li>
-                <li class="main-content-filter__brand-items">
-                  <label class="main-content-filter__brand-items-label">
-                    <input class="main-content-filter__brand-items-input" type="checkbox"  name="hitachi">
-                    hitachi
-                  </label>
-                </li>
-              </ul>
+            <ul class="main-content-filter__brand-list">
+              <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
+                <input class="main-content-filter__brand-items-input visible-hidden" id="bosch" type="checkbox" value="bosch" checked>
+                <label class="main-content-filter__brand-items-label" for="bosch">bosch</label>
+              </li>
+              <li class="main-content-filter__brand-items">
+                <input class="main-content-filter__brand-items-input visible-hidden" id="interscol" type="checkbox" value="интерскол">
+                <label class="main-content-filter__brand-items-label" for="interscol">интерскол</label>
+              </li>
+              <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
+                <input class="main-content-filter__brand-items-input visible-hidden" id="makita" type="checkbox" name="makita" checked>
+                <label class="main-content-filter__brand-items-label" for="makita">makita</label>
+              </li>
+              <li class="main-content-filter__brand-items">
+                <input class="main-content-filter__brand-items-input visible-hidden" id="dewalt" type="checkbox" name="dewalt">
+                <label class="main-content-filter__brand-items-label" for="dewalt">dewalt</label>
+              </li>
+              <li class="main-content-filter__brand-items">
+                <input class="main-content-filter__brand-items-input visible-hidden" id="hitachi" type="checkbox"  name="hitachi">
+                <label class="main-content-filter__brand-items-label" for="hitachi">hitachi</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="main-content-filter__type-fieldset">
             <legend class="main-content-filter__type-title">
               питание:
             </legend>
-              <ul class="main-content-filter__type-list">
-                <li class="main-content-filter__type-items main-content-filter__type-items-input--active">
-                  <label class="main-content-filter__type-items-label">
-                    <input class="main-content-filter__type-items-input" type="checkbox" name="аккумуляторные" checked>
-                      аккумуляторные
-                  </label>
-                </li>
-                <li class="main-content-filter__type-items">
-                  <label class="main-content-filter__type-items-label">
-                    <input class="main-content-filter__type-items-input" type="checkbox" name="сетевые">
-                      сетевые
-                  </label>
-                </li>
-              </ul>
+            <ul class="main-content-filter__type-list">
+              <li class="main-content-filter__type-items main-content-filter__type-items-input--active">
+                <input class="main-content-filter__type-items-input visible-hidden" id="rechargeable" type="radio" name="аккумуляторные" checked>
+                <label class="main-content-filter__type-items-label" for="rechargeable">аккумуляторные</label>
+              </li>
+              <li class="main-content-filter__type-items">
+                <input class="main-content-filter__type-items-input visible-hidden" id="networked" type="radio" name="сетевые">
+                <label class="main-content-filter__type-items-label" for="networked">сетевые</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="btn main-content-filter__btn" type="submit">показать</button>
         </form>
@@ -539,7 +527,7 @@
 <div class="basket-add">
   <div class="container container-basket-add">
     <button class="basket-add__close-button">
-      <img class="basket-add__close-button-img" src="img/close.png" width="21" height="21" alt="Закрыть модальное окно">
+      <img class="basket-add__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть модальное окно">
     </button>
     <p class="basket-add__inner">
       <img class="basket-add__inner-icon" src="img/mark.svg" width="66" height="66" alt="Товар добавлен в корзину">
