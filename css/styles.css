@@ -1135,7 +1135,7 @@ a {
 
 .main-content .flex--between {
   align-items: flex-start;
-  /*margin-top: 50px;*/
+  margin-bottom: 50px;
 }
 
 .main-content-filter {
@@ -1616,6 +1616,81 @@ a {
   border-left-color: #ee3643;
 }
 
+
+/* pagination */
+
+.main-content-catalog__pagination {
+  width: 290px;
+  min-height: 38px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.main-content-catalog__pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.main-content-catalog__pagination-items {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content-catalog__pagination-items:hover {
+  border: 1px solid #bdc6ca
+}
+
+.main-content-catalog__pagination-items + .main-content-catalog__pagination-item:focus  {
+  border-color: #ee3643;
+}
+
+.main-content-catalog__pagination-items--current {
+  margin: 0;
+  background-color: #ee3643;
+  border-color: transparent;
+}
+
+.main-content-catalog__pagination-item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000;
+}
+
+.main-content-catalog__pagination-item--current {
+  color: #fff;
+}
+
+.main-content-catalog__pagination-btn {
+  width: 140px;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 0;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.main-content-catalog__pagination-btn:hover {
+  border: 1px solid #bdc6ca
+}
+
+.main-content-catalog__pagination-btn:focus {
+  border-color: #ee3643;
+}
+
 /* catalog popup */
 
 .basket-add {
@@ -1688,8 +1763,31 @@ a {
 }
 
 
+/* catalog-about section */
 
+.catalog-about {
+  background-color: #f2f6f8;
+}
 
+.catalog-about-container {
+  padding: 70px 0;
+}
+
+.catalog-about__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #404242;
+
+}
+
+.catalog-about__inner {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+}
 
 
 
