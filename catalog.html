@@ -118,9 +118,44 @@
   </section>
   <section class="main-content">
     <!-- фильтр товаров + форма-->
+
     <div class="container flex--between">
-      <div class="main-con
-      tent-filter">
+      <div class="main-content-filter">
+        <div class="filter">
+          <h3 class="filter-title">
+            Фильтр:
+          </h3>
+          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend class="filter-legend">
+                Цена:
+              </legend>
+              <div class="filter-range">
+                <div class="filter-range-controls">
+                  <div class="filter-range-controls__progress-bar">
+                    <div class="filter-range-controls__inner-bar">
+
+                    </div>
+                  </div>
+                  <div class="filter-range-toggle filter-range-toggle-min">
+
+                  </div>
+                  <div class="filter-range-toggle filter-range-toggle-max">
+
+                  </div>
+                </div>
+                <div class="filter-price-controls">
+                  <label class="filter-price__min-label">
+                    <input class="filter-price__min-input" name="min-rpice" type="text" value="0">
+                  </label>
+                  <label class="filter-price__max-label">
+                    <input class="filter-price__max-input" name="max-price" type="text" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
         <form class="main-content-filter__brand" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-content-filter__brand-fieldset">
             <legend class="main-content-filter__brand-title">
@@ -129,23 +164,23 @@
             <ul class="main-content-filter__brand-list">
               <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
                 <input class="main-content-filter__brand-items-input visible-hidden" id="bosch" type="checkbox" value="bosch" checked>
-                <label class="main-content-filter__brand-items-label" for="bosch">bosch</label>
+                <label class="main-content-filter__brand-items-label" for="bosch" tabindex="0">bosch</label>
               </li>
               <li class="main-content-filter__brand-items">
                 <input class="main-content-filter__brand-items-input visible-hidden" id="interscol" type="checkbox" value="интерскол">
-                <label class="main-content-filter__brand-items-label" for="interscol">интерскол</label>
+                <label class="main-content-filter__brand-items-label" for="interscol" tabindex="0">интерскол</label>
               </li>
               <li class="main-content-filter__brand-items main-content-filter__brand-items--active">
                 <input class="main-content-filter__brand-items-input visible-hidden" id="makita" type="checkbox" name="makita" checked>
-                <label class="main-content-filter__brand-items-label" for="makita">makita</label>
+                <label class="main-content-filter__brand-items-label" for="makita" tabindex="0">makita</label>
               </li>
               <li class="main-content-filter__brand-items">
                 <input class="main-content-filter__brand-items-input visible-hidden" id="dewalt" type="checkbox" name="dewalt">
-                <label class="main-content-filter__brand-items-label" for="dewalt">dewalt</label>
+                <label class="main-content-filter__brand-items-label" for="dewalt" tabindex="0">dewalt</label>
               </li>
               <li class="main-content-filter__brand-items">
-                <input class="main-content-filter__brand-items-input visible-hidden" id="hitachi" type="checkbox"  name="hitachi">
-                <label class="main-content-filter__brand-items-label" for="hitachi">hitachi</label>
+                <input class="main-content-filter__brand-items-input visible-hidden" id="hitachi" type="checkbox" name="hitachi">
+                <label class="main-content-filter__brand-items-label" for="hitachi" tabindex="0" >hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -155,12 +190,12 @@
             </legend>
             <ul class="main-content-filter__type-list">
               <li class="main-content-filter__type-items main-content-filter__type-items-input--active">
-                <input class="main-content-filter__type-items-input visible-hidden" id="rechargeable" type="radio" name="аккумуляторные" checked>
-                <label class="main-content-filter__type-items-label" for="rechargeable">аккумуляторные</label>
+                <input class="main-content-filter__type-items-input visible-hidden" id="rechargeable" type="radio" name="питание" value="аккумулятрные" checked>
+                <label class="main-content-filter__type-items-label" for="rechargeable" tabindex="0">аккумуляторные</label>
               </li>
               <li class="main-content-filter__type-items">
-                <input class="main-content-filter__type-items-input visible-hidden" id="networked" type="radio" name="сетевые">
-                <label class="main-content-filter__type-items-label" for="networked">сетевые</label>
+                <input class="main-content-filter__type-items-input visible-hidden" id="networked" type="radio"  name="питание" value="сетевые">
+                <label class="main-content-filter__type-items-label" for="networked" tabindex="0">сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -168,6 +203,22 @@
         </form>
       </div>
       <div class="main-content-catalog">
+        <div class="main-content-sort">
+          <span class="main-content-sort__title">
+            сортировка:
+          </span>
+          <ul class="main-content-sort__list">
+            <li class="main-content-sort__items">
+              <a href="" class="main-content-sort__item">по цене</a>
+            </li>
+            <li class="main-content-sort__items">
+              <a href="" class="main-content-sort__item">по типу</a>
+            </li>
+            <li class="main-content-sort__items main-content-sort__items--last">
+              <a href="" class="main-content-sort__item">по функционалу</a>
+            </li>
+          </ul>
+        </div>
         <h2 class="visible-hidden">Каталог товаров магазина "Техномарт"</h2>
         <ul class="main-content-catalog__list flex--between">
           <li class="main-content-catalog__item">
@@ -228,19 +279,20 @@
               </a>
             </div>
           </li>
-          <li class="main-content-catalog__item main-content-catalog__item--show">
+          <li class="main-content-catalog__item">
             <div class="main-content-catalog__item-new main-content-catalog__item-new-icon">
               новинка
             </div>
-            <div class="main-content-catalog__item-user main-content-catalog__item-user--show">
-              <a class="main-content-catalog__item-user-buy main-content-catalog__item-user-buy--show" href="basket.html">
+            <div class="main-content-catalog__item-user">
+              <a class="main-content-catalog__item-user-buy" href="basket.html">
                 купить
               </a>
               <a class="main-content-catalog__item-user-bookmarks main-content-catalog__item-user-bookmarks--show" href="bookmarks.html">
                 в закладки
               </a>
             </div>
-            <div class="main-content-catalog__item-image main-content-catalog__item-image--none" href="catalog-item.html">
+            <div class="main-content-catalog__item-image" href="catalog-item.html">
+              <img class="main-content-catalog__item-image-main" src="img/item-1.png" width="218" height="170" alt="Перфоратор BOSCH">
             </div>
             <h3 class="main-content-catalog__item-title">
               <a class="main-content-catalog__item-ref" href="catalog-item.html">
@@ -248,9 +300,6 @@
               </a>
             </h3>
             <div class="main-content-catalog__item-price">
-              <span class="main-content-catalog__item-old-price main-content-catalog__item-old-price--unshown">
-                15000
-              </span>
               <a class="main-content-catalog__item-new-price" href="#">
                 12500 Р.
               </a>
@@ -335,9 +384,6 @@
               </a>
             </h3>
             <div class="main-content-catalog__item-price">
-              <span class="main-content-catalog__item-old-price main-content-catalog__item-old-price--unshown">
-                22500 P.
-              </span>
               <a class="main-content-catalog__item-new-price" href="#">
                 12500 Р.
               </a>
@@ -422,9 +468,6 @@
               </a>
             </h3>
             <div class="main-content-catalog__item-price">
-              <span class="main-content-catalog__item-old-price main-content-catalog__item-old-price--unshown">
-                22500 P.
-              </span>
               <a class="main-content-catalog__item-new-price" href="#">
                 12500 Р.
               </a>
