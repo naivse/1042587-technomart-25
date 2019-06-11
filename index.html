@@ -15,10 +15,11 @@
   <div class="header-top">
     <div class="container flex--between">
       <a class="header-top__logo">
-        <img class="header-top__logo-img" src="img/logo.svg" width="136.5" height="21.59" alt="Логотип магазина техномарт">
+        <img class="header-top__logo-img" src="img/logo.svg" width="136" height="22" alt="Логотип магазина техномарт">
       </a>
       <form class="header-top__form" action="programm.php" method="post">
-        <input class="header-top__form-input" type="text" name="search" placeholder="Поиск:">
+        <input class="header-top__form-input" type="text" name="search" id="header-search" placeholder="Поиск:">
+        <label class="header-top__form-label" for="header-search"></label>
       </form>
       <a class="header-top__bookmarks" href="bookmarks.html">Закладки: 0</a>
       <a class="header-top__basket" href="basket.html">Корзина: 0</a>
@@ -79,82 +80,96 @@
 <main>
   <section class="features">
     <div class="container flex--between">
-      <div class="features-item features-item--new">
-        <h2 class="features-title">
-          Материалы
-        </h2>
-        <div class="features-img">
-          <img class="features-img__inner" src="img/materials.png" width="44" height="65" alt="материалы">
-        </div>
-        <a class="features-ref" href="materials.html">на любой вкус</a>
-      </div>
-      <div class="features-item">
-        <h2 class="features-title">
-          Инструмент
-        </h2>
-        <div class="features-img">
-          <img class="features-img__inner" src="img/tools.png" width="75" height="61" alt="инструмент">
-        </div>
-        <a class="features-ref" href="materials.html">на все случаи</a>
-      </div>
-      <div class="features-item">
-        <h2 class="features-title">
-          Техника
-        </h2>
-        <div class="features-img">
-          <img class="features-img__inner" src="img/car.png" width="78" height="62" alt="материалы">
-        </div>
-        <a class="features-ref" href="materials.html">для стройки</a>
-      </div>
-      <div class="features-slider">
-        <div class="features-slider-inner">
-          <h2 class="features-slider-inner__title">
-            дрели
+      <div class="features-item-top">
+        <div class="features-item features-item--new">
+          <h2 class="features-title">
+            Материалы
           </h2>
-          <p class="features-slider-inner__offer">
-            Соседям на радость
-          </p>
-          <a class="features-slider-inner__ref" href="catalog.html">
-            открыть каталог
-          </a>
+          <div class="features-img">
+            <img class="features-img__inner" src="img/materials.png" width="44" height="65" alt="материалы">
+          </div>
+          <a class="features-ref" href="materials.html">на любой вкус</a>
+        </div>
+        <div class="features-item">
+          <h2 class="features-title">
+            Инструмент
+          </h2>
+          <div class="features-img">
+            <img class="features-img__inner" src="img/tools.png" width="75" height="61" alt="инструмент">
+          </div>
+          <a class="features-ref" href="materials.html">на все случаи</a>
+        </div>
+        <div class="features-item">
+          <h2 class="features-title">
+            Техника
+          </h2>
+          <div class="features-img">
+            <img class="features-img__inner" src="img/car.png" width="78" height="62" alt="материалы">
+          </div>
+          <a class="features-ref" href="materials.html">для стройки</a>
+        </div>
+      </div>
+      <div class="features-item-bottom">
+        <div class="features-slider">
+          <div class="features-slider-btn">
+              <input class="features-slider-btn-input-1" type="radio" name="point" id="slider-1" checked>
+              <input class="features-slider-btn-input-2" type="radio" name="point" id="slider-2">
+            <div class="features-slider-label">
+              <label class="features-slider-btn-label-1" for="slider-1"></label>
+              <label class="features-slider-btn-label-2" for="slider-2"></label>
+            </div>
+          </div>
+          <div class="features-slider-inner">
+            <h2 class="features-slider-inner__title">
+              дрели
+            </h2>
+            <p class="features-slider-inner__offer">
+              Соседям на радость
+            </p>
+            <a class="features-slider-inner__ref" href="catalog.html">
+              открыть каталог
+            </a>
+            <div class="features-slider-buttons">
+              <a class="prev-slide" onclick="plusSlides(0)">Предыдущий</a>
+              <a class="next-slide" onclick="plusSlides(-1)">Предыдущий</a>
+            </div>
+          </div>
+          <div class="features-slider-inner">
+            <h2 class="features-slider-inner__title">
+              перфораторы
+            </h2>
+            <p class="features-slider-inner__offer">
+              Настоящие мужские игрушки
+            </p>
+            <a class="features-slider-inner__ref" href="catalog.html">
+              открыть каталог
+            </a>
+          </div>
           <div class="features-slider-buttons">
             <a class="prev-slide" onclick="plusSlides(0)">Предыдущий</a>
             <a class="next-slide" onclick="plusSlides(-1)">Предыдущий</a>
           </div>
         </div>
-        <div class="features-slider-inner">
-          <h2 class="features-slider-inner__title">
-            перфораторы
-          </h2>
-          <p class="features-slider-inner__offer">
-            Настоящие мужские игрушки
-          </p>
-          <a class="features-slider-inner__ref" href="catalog.html">
-            открыть каталог
-          </a>
+        <div class="features-item-bottom__right">
+          <div class="features-item">
+            <h2 class="features-title">
+              Скидки 50%
+            </h2>
+            <div class="features-img">
+              <img class="features-img__inner" src="img/discount.png" width="59" height="72" alt="материалы">
+            </div>
+            <a class="features-ref" href="materials.html">На 350 ТОВАРОВ</a>
+          </div>
+          <div class="features-item">
+            <h2 class="features-title">
+              Доставка
+            </h2>
+            <div class="features-img">
+              <img class="features-img__inner" src="img/delivery.png" width="78" height="63" alt="материалы">
+            </div>
+            <a class="features-ref" href="materials.html">бесплатно</a>
+          </div>
         </div>
-        <div class="features-slider-buttons">
-          <a class="prev-slide" onclick="plusSlides(0)">Предыдущий</a>
-          <a class="next-slide" onclick="plusSlides(-1)">Предыдущий</a>
-        </div>
-      </div>
-      <div class="features-item">
-        <h2 class="features-title">
-          Скидки 50%
-        </h2>
-        <div class="features-img">
-          <img class="features-img__inner" src="img/car.png" width="78" height="62" alt="материалы">
-        </div>
-        <a class="features-ref" href="materials.html">На 350 ТОВАРОВ</a>
-      </div>
-      <div class="features-item">
-        <h2 class="features-title">
-          Доставка
-        </h2>
-        <div class="features-img">
-          <img class="features-img__inner" src="img/car.png" width="78" height="62" alt="материалы">
-        </div>
-        <a class="features-ref" href="materials.html">бесплатно</a>
       </div>
     </div>
   </section>
@@ -181,7 +196,7 @@
               в закладки
             </a>
           </div>
-          <div class="popular-goods__item-image" href="catalog-item.html">
+          <div class="popular-goods__item-image">
             <img class="popular-goods__item-image-main" src="img/item-3.png" width="218" height="170" alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
@@ -191,10 +206,10 @@
           </h3>
           <div class="popular-goods__item-price">
                 <span class="popular-goods__item-old-price">
-                  22500 P.
+                  32500 P.
                 </span>
             <a class="popular-goods__item-new-price" href="#">
-              15500 Р.
+              25500 Р.
             </a>
           </div>
         </li>
@@ -210,7 +225,7 @@
               в закладки
             </a>
           </div>
-          <div class="popular-goods__item-image" href="catalog-item.html">
+          <div class="popular-goods__item-image">
             <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170" alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
@@ -239,7 +254,7 @@
               в закладки
             </a>
           </div>
-          <div class="popular-goods__item-image" href="catalog-item.html">
+          <div class="popular-goods__item-image">
             <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170" alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
@@ -249,10 +264,10 @@
           </h3>
           <div class="popular-goods__item-price">
                 <span class="popular-goods__item-old-price">
-                  22500 P.
+                  30500 P.
                 </span>
             <a class="popular-goods__item-new-price" href="#">
-              15500 Р.
+              25500 Р.
             </a>
           </div>
         </li>
@@ -268,7 +283,7 @@
               в закладки
             </a>
           </div>
-          <div class="popular-goods__item-image" href="catalog-item.html">
+          <div class="popular-goods__item-image">
             <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170" alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
@@ -278,14 +293,109 @@
           </h3>
           <div class="popular-goods__item-price">
                 <span class="popular-goods__item-old-price">
-                  22500 P.
                 </span>
             <a class="popular-goods__item-new-price" href="#">
-              15500 Р.
+              12500 Р.
             </a>
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="popular-brands">
+    <div class="container">
+      <div class="popular-brands__header flex--between">
+        <h2 class="popular-brands__title">
+          популярные производители:
+        </h2>
+        <a class="popular-brands__ref" href="brands.html">
+          все производители
+        </a>
+      </div>
+      <div class="popular-brands__inner">
+        <ul class="popular-brands__list flex--between">
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/bosch.png" width="126" height="37" alt="bosch">
+          </li>
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/makita.png" width="123" height="40" alt="makita">
+          </li>
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/dewalt.png" width="146" height="44" alt="dewalt">
+          </li>
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/interscol.png" width="200" height="88" alt="interscol">
+          </li>
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/hitachi.png" width="169" height="31" alt="hitachi">
+          </li>
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/lg.png" width="121" height="73" alt="lg">
+          </li>
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/aeg.png" width="151" height="96" alt="aeg">
+          </li>
+          <li class="popular-brands__inner-items">
+              <img class="popular-brands__inner-item-img" src="img/metabo.png" width="204" height="69" alt="metabo">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="service">
+    <div class="container">
+      <h2 class="service-title">
+      сервисы
+      </h2>
+      <p class="service-offer">
+        Хороший интернет-магазин отличается от плохого не только ценами!
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+      </p>
+      <div class="service-inner">
+        <input class="service-inner__input" type="radio"  name="service-inn" id="service-block-1" checked>
+        <input class="service-inner__input" type="radio"  name="service-inn" id="service-block-2">
+        <input class="service-inner__input" type="radio"  name="service-inn" id="service-block-3">
+        <div class="service-toggle">
+          <label class="service-inner__label" for="service-block-1">Доставка</label>
+          <label class="service-inner__label" for="service-block-2">Гарантия</label>
+          <label class="service-inner__label" for="service-block-3">Кредит</label>
+        </div>
+        <div class="service-block__right">
+          <div class="service-block__right-touch delivery">
+            <h3 class="service-block__right-touch-title">
+              доставка
+            </h3>
+            <p class="service-block__right-touch-inner">
+              Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!
+            </p>
+          </div>
+          <div class="service-block__right-touch guarantee">
+            <h3 class="service-block__right-touch-title">
+              гарантия
+            </h3>
+            <p class="service-block__right-touch-inner">
+              Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="service-block__right-touch credit">
+            <h3 class="service-block__right-touch-title">
+              кредит
+            </h3>
+            <p class="service-block__right-touch-inner">
+              Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a class="service-block__right-touch-ref" href="credit.html">
+              отправить заявку
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="about">
@@ -323,7 +433,6 @@
         </div>
         <a class="about__right-offer-find-us" href="#">заблудились? напишите нам!</a>
       </div>
-      форма?
     </div>
   </section>
 </main>
@@ -331,7 +440,7 @@
   <div class="footer-top">
     <div class="container footer-top__nav flex--between">
       <a class="footer-top__logo">
-        <img class="footer-top__logo-img" src="img/logo.svg" width="136.5" height="21.59" alt="Логотип магазина техномарт">
+        <img class="footer-top__logo-img" src="img/logo.svg" width="136" height="22" alt="Логотип магазина техномарт">
       </a>
       <ul class="footer-top__nav-list">
         <li class="footer-top__nav-items">
@@ -420,8 +529,11 @@
   <div class="container contact-us-map">
     <img class="contact-us-map__img" src="img/map-big.png" width="940" height="447" alt="Как к нам проехать">
   </div>
+  <button class="contact-us-map__close-button">
+    <img class="contact-us-map__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть карту">
+  </button>
 </div>
-<div class="contact-us">
+<div class="contact-us contact-us-show contact-us-">
   <button class="contact-us__close-button">
     <img class="contact-us__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть модальное окно">
   </button>
@@ -450,6 +562,67 @@
     </div>
   </form>
 </div>
+
+
+<script>
+  var link = document.querySelector(".about__right-offer-find-us");
+  var popup = document.querySelector(".contact-us");
+  var close = popup.querySelector(".contact-us__close-button");
+  var login = popup.querySelector("[name=login]");
+  var form = popup.querySelector("form");
+  var email = popup.querySelector("[name=email]");
+  var isStorageSupport = true;
+  var storage = "";
+
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("contact-us-show");
+
+    if (storage) {
+      login.value = storage;
+      email.focus();
+    } else {
+      login.focus();
+    }
+    login.focus();
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("contact-us-show");
+    popup.classList.remove("contact-us-show-error");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value) {
+      evt.preventDefault();
+      popup.classList.remove("contact-us-show-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("contact-us-show-error");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("contact-us-show")) {
+        popup.classList.remove("contact-us-show");
+        popup.classList.remove("contact-us-show-error");
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
 
