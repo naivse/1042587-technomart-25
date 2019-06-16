@@ -645,19 +645,19 @@
 
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.add("contact-us-show");
+    mapPopup.classList.add("contact-us-show-map");
   });
 
   mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.remove("contact-us-show");
+    mapPopup.classList.remove("contact-us-show-map");
   });
 
   window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("contact-us-show")) {
-        mapPopup.classList.remove("contact-us-show");
+      if (mapPopup.classList.contains("contact-us-show-map")) {
+        mapPopup.classList.remove("contact-us-show-map");
       }
     }
   });

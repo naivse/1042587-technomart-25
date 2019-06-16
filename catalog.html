@@ -604,6 +604,11 @@
     </div>
   </div>
 </footer>
+</body>
+</html>
+</body>
+</html>
+
 <div class="basket-add">
   <div class="container container-basket-add">
     <button class="basket-add__close-button">
@@ -625,15 +630,11 @@
     </button>
   </div>
 </div>
-</body>
-</html>
-</body>
-</html>
 
 <script>
-  var link = document.querySelector(".main-content-catalog__item-user-buy");
+  var link = document.querySelectorAll(".main-content-catalog__item-user-buy");
   var popup = document.querySelector(".basket-add");
-  var close = popup.querySelector(".basket-add__button-continue");
+  var close = popup.querySelector(".basket-add__close-button");
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
