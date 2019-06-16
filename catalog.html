@@ -632,7 +632,7 @@
 </div>
 
 <script>
-  var link = document.querySelectorAll(".main-content-catalog__item-user-buy");
+  var link = document.querySelector(".main-content-catalog__item-user-buy");
   var popup = document.querySelector(".basket-add");
   var close = popup.querySelector(".basket-add__close-button");
 
@@ -644,6 +644,15 @@
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("card-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("card-show")) {
+        mapPopup.classList.remove("card-show");
+      }
+    }
   });
 
 </script>
