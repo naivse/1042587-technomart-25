@@ -441,14 +441,12 @@
         <a class="btn about__left-order__btn" href="about.html">подробнее о компании</a>
       </div>
       <div class="about__right">
-        <div class="teset">
         <h3 class="about__right-contacts">Контакты</h3>
         <p class="about__right-offer">Вы можете забрать товар сами,<br>
           <!--тут либо бр, что вряд-ли, либо h3 + p оборачивать контейнер и задвать ширину--> заехав в наш офис:</p>
-        </div>
-        <div class="map">
+        <a class="map show-map" href="#">
           <img class="about__right-map" src="img/map.png" width="300" height="158" alt="our location">
-        </div>
+        </a>
         <a class="about__right-offer-find-us" href="#">заблудились? напишите нам!</a>
       </div>
     </div>
@@ -544,14 +542,15 @@
   </div>
 </footer>
 <div class="contact-us-map">
-  <div class="container contact-us-map">
+  <div class="container">
+    <iframe class="contact-us-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sus!4v1560620810294!5m2!1sru!2sus" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
     <img class="contact-us-map__img" src="img/map-big.png" width="940" height="447" alt="Как к нам проехать">
   </div>
   <button class="contact-us-map__close-button">
     <img class="contact-us-map__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть карту">
   </button>
 </div>
-<div class="contact-us  contact-us-">
+<div class="contact-us">
   <button class="contact-us__close-button">
     <img class="contact-us__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть модальное окно">
   </button>
@@ -639,11 +638,30 @@
       }
     }
   });
+
+  var mapLink = document.querySelector(".show-map");
+  var mapPopup = document.querySelector(".contact-us-map");
+  var mapClose = document.querySelector(".contact-us-map__close-button");
+
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("contact-us-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("contact-us-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("contact-us-show")) {
+        mapPopup.classList.remove("contact-us-show");
+      }
+    }
+  });
 </script>
-
-</body>
-</html>
-
 
 
 

@@ -86,20 +86,38 @@ a {
   /*align-items: flex-start;*/
 }
 
-.header-top__logo-img {
+.header-top__logo {
   background-color: #ee3643;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  /*box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);*/
   padding: 8px 55px;
+  height: 26px;
+  position: relative;
 }
 
-.header-top__logo-img:hover {
+.header-top__logo::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 246px;
+  height: 5px;
+  background-color: #b52933;
+}
+
+.header-top__logo:hover {
   background-color: #ca2c37;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+
+}
+.header-top__logo:hover::after {
+  background-color: #9a212a;
 }
 
-.header-top__logo-img:focus {
+.header-top__logo:active {
   background-color: #ba2732;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.header-top__logo:active::after {
+  background-color: #8d1e26;
 }
 
 .header-top__form {
@@ -243,7 +261,7 @@ a {
   padding: 12px 0 12px 50px;
   margin-left: 0;
   position: relative;
-  width: 100px;
+  width: 110px;
 }
 
 .header-top__basket:hover {
@@ -280,7 +298,7 @@ a {
 .header-top__order {
   background-color: #63a63e;
   padding: 12px 0;
-  width: 150px;
+  width: 177px;
   text-align: center;
 }
 
@@ -378,6 +396,10 @@ a {
   color: #000;
 }
 
+.header-main__user-enter-ref:nth-child(1) {
+  padding-left: 15px;
+}
+
 .header-main__user-enter-ref::before {
   content: "";
   position: absolute;
@@ -385,8 +407,8 @@ a {
   height: 17px;
   background: url("../img/login.svg") no-repeat 0 0;
   color: #c5c5c5;
-  left: 8px;
-  top: 14px;
+  left: 15px;
+  top: 15px;
 }
 
 .header-main__user-enter-ref:hover::before {
@@ -615,12 +637,11 @@ a {
   height: 6px;
   margin: 0 5px;
   vertical-align: top;
-  /*background-color: #ee3643;*/
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
-
+.features-slider-btn-label-1,
 .features-slider-btn-label-2 {
   background-color: #fff;
 }
@@ -1334,7 +1355,7 @@ a {
 }
 
 .footer-top__nav {
-  min-height: 95px;
+  min-height: 80px;
   align-items: flex-start;
 }
 
@@ -1343,6 +1364,7 @@ a {
   display: flex;
   padding-left: 0;
   justify-content: space-between;
+  margin-top: 35px;
 }
 
 .footer-top__logo-img {
@@ -1493,17 +1515,19 @@ a {
 /* index popup */
 
 .contact-us {
-  width: 620px;
-  min-height: 430px;
+  /*width: 620px;*/
+  /*min-height: 430px;*/
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   border-top: 7px solid #ff5257;
   background-color: #fff;
-  position: relative;
+  position: fixed;
+  top: 25%;
+  left: 35%;
   display: none;
-  bottom: 1025px;
-  left:50%;
-  margin: 0 auto 0 -300px;
-
+  z-index: 1000;
+  /*bottom: 1025px;*/
+  /*left:50%;*/
+  /*margin: 0 0 0 -300px;*/
 }
 
 .contact-us-show {
@@ -1559,8 +1583,30 @@ a {
 /* contact us map */
 
 .contact-us-map {
-  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ff5257;
+  background-color: #fff;
+  position: fixed;
+  top: 25%;
+  left: 35%;
+  display: none;
+  z-index: 1000;
 }
+
+.contact-us-map__iframe {
+  position: relative;
+  z-index: 150;
+  border: none;
+}
+
+.contact-us-map__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  margin: 0;
+}
+
 
 .contact-us-map__close-button {
   position: absolute;
@@ -1748,8 +1794,13 @@ a {
   margin-bottom: 25px;
 }
 
+.header-top__order--catalog {
+  width: 167px;
+}
+
 .header-top__basket--not-empty {
   background-color: #ee3643;
+  width: 117px;
 }
 
 .header-main__user-catalog {
@@ -1795,8 +1846,8 @@ a {
 
 .header-main__user-name-logout {
   position: absolute;
-  right: 35px;
-  top: 17px;
+  right: 42px;
+  top: 15px;
 }
 
 .header-main__user-name-logout::after {
@@ -2379,9 +2430,6 @@ a {
 
 }
 
-
-
-
 /* карточка товарв */
 
 .main-content-catalog {
@@ -2433,6 +2481,10 @@ a {
   padding: 40px 0;
   background-color: rgba(255,255,255,0.9);
   z-index: 5;
+}
+
+.card-show {
+  display: block;
 }
 
 .main-content-catalog__item-user-buy,
@@ -2666,7 +2718,8 @@ a {
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   margin: 0 auto;
   border-top: 7px solid #ff5257;
-  position: relative;
+  position: fixed;
+  display: none;
 }
 
 .container-basket-add {
