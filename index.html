@@ -17,15 +17,20 @@
       <a class="header-top__logo">
         <img class="header-top__logo-img" src="img/logo.svg" width="136" height="22" alt="Логотип магазина техномарт">
       </a>
-      <form class="header-top__form" action="programm.php" method="post">
-        <input class="header-top__form-input" type="text" name="search" id="header-search" placeholder="Поиск:">
-        <label class="header-top__form-label" for="header-search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-        </label>
-      </form>
-      <a class="header-top__bookmarks" href="bookmarks.html">Закладки: 0</a>
-      <a class="header-top__basket" href="basket.html">Корзина: 0</a>
-      <a class="header-top__order" href="order.html">Оформить заказ</a>
+      <div class="header-top__container-form">
+        <form class="header-top__form" action="programm.php" method="post">
+          <input class="header-top__form-input" type="text" name="search" id="header-search" placeholder="Поиск:">
+          <label class="header-top__form-label" for="header-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path fill="#ffffff"
+                    d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+            </svg>
+          </label>
+        </form>
+        <a class="header-top__bookmarks" href="bookmarks.html">Закладки: 0</a>
+        <a class="header-top__basket" href="basket.html">Корзина: 0</a>
+        <a class="header-top__order" href="order.html">Оформить заказ</a>
+      </div>
     </div>
   </div>
   <div class="header-main">
@@ -38,12 +43,12 @@
       <ul class="header-main__user">
         <li class="header-main__user-enter">
           <a class="header-main__user-enter-ref" href="enter.html">
-          Войти
+            Войти
           </a>
         </li>
         <li class="header-main__user-registration">
           <a class="header-main__user-registration-ref" href="registration.html">
-          Регистрация
+            Регистрация
           </a>
         </li>
       </ul>
@@ -114,8 +119,8 @@
       <div class="features-item-bottom">
         <div class="features-slider">
           <div class="features-slider-btn">
-              <input class="features-slider-btn-input-1" type="radio" name="point" id="slider-1" checked>
-              <input class="features-slider-btn-input-2" type="radio" name="point" id="slider-2">
+            <input class="features-slider-btn-input-1" type="radio" name="point" id="slider-1" checked>
+            <input class="features-slider-btn-input-2" type="radio" name="point" id="slider-2">
             <div class="features-slider-label">
               <label class="features-slider-btn-label-1" for="slider-1"></label>
               <label class="features-slider-btn-label-2" for="slider-2"></label>
@@ -199,7 +204,8 @@
             </a>
           </div>
           <div class="popular-goods__item-image">
-            <img class="popular-goods__item-image-main" src="img/item-3.png" width="218" height="170" alt="Перфоратор BOSCH">
+            <img class="popular-goods__item-image-main" src="img/item-3.png" width="218" height="170"
+                 alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
             <a class="popular-goods__item-ref" href="catalog-item.html">
@@ -228,7 +234,8 @@
             </a>
           </div>
           <div class="popular-goods__item-image">
-            <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170" alt="Перфоратор BOSCH">
+            <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170"
+                 alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
             <a class="popular-goods__item-ref" href="catalog-item.html">
@@ -257,7 +264,8 @@
             </a>
           </div>
           <div class="popular-goods__item-image">
-            <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170" alt="Перфоратор BOSCH">
+            <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170"
+                 alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
             <a class="popular-goods__item-ref" href="catalog-item.html">
@@ -273,8 +281,8 @@
             </a>
           </div>
         </li>
-        <li class="popular-goods__item">
-          <div class="popular-goods__item-new popular-goods__item-new-icon">
+        <li class="popular-goods__item popular-goods__item-new-icon">
+          <div class="popular-goods__item-new">
             новинка
           </div>
           <div class="popular-goods__item-user">
@@ -286,7 +294,8 @@
             </a>
           </div>
           <div class="popular-goods__item-image">
-            <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170" alt="Перфоратор BOSCH">
+            <img class="popular-goods__item-image-main" src="img/item-1.png" width="218" height="170"
+                 alt="Перфоратор BOSCH">
           </div>
           <h3 class="popular-goods__item-title">
             <a class="popular-goods__item-ref" href="catalog-item.html">
@@ -332,28 +341,29 @@
             </a>
           </li>
           <li class="popular-brands__inner-items">
-             <a class="popular-brands__inner-item" href="#brands.html">
-               <img class="popular-brands__inner-item-img" src="img/interscol.png" width="200" height="88" alt="interscol">
+            <a class="popular-brands__inner-item" href="#brands.html">
+              <img class="popular-brands__inner-item-img" src="img/interscol.png" width="200" height="88"
+                   alt="interscol">
             </a>
           </li>
           <li class="popular-brands__inner-items">
-             <a class="popular-brands__inner-item" href="#brands.html">
-               <img class="popular-brands__inner-item-img" src="img/hitachi.png" width="169" height="31" alt="hitachi">
+            <a class="popular-brands__inner-item" href="#brands.html">
+              <img class="popular-brands__inner-item-img" src="img/hitachi.png" width="169" height="31" alt="hitachi">
             </a>
           </li>
           <li class="popular-brands__inner-items">
-             <a class="popular-brands__inner-item" href="#brands.html">
-               <img class="popular-brands__inner-item-img" src="img/lg.png" width="121" height="73" alt="lg">
+            <a class="popular-brands__inner-item" href="#brands.html">
+              <img class="popular-brands__inner-item-img" src="img/lg.png" width="121" height="73" alt="lg">
             </a>
           </li>
           <li class="popular-brands__inner-items">
-             <a class="popular-brands__inner-item" href="#brands.html">
-               <img class="popular-brands__inner-item-img" src="img/aeg.png" width="151" height="96" alt="aeg">
+            <a class="popular-brands__inner-item" href="#brands.html">
+              <img class="popular-brands__inner-item-img" src="img/aeg.png" width="151" height="96" alt="aeg">
             </a>
           </li>
           <li class="popular-brands__inner-items">
-             <a class="popular-brands__inner-item" href="#brands.html">
-               <img class="popular-brands__inner-item-img" src="img/metabo.png" width="204" height="69" alt="metabo">
+            <a class="popular-brands__inner-item" href="#brands.html">
+              <img class="popular-brands__inner-item-img" src="img/metabo.png" width="204" height="69" alt="metabo">
             </a>
           </li>
         </ul>
@@ -363,16 +373,16 @@
   <section class="service">
     <div class="container">
       <h2 class="service-title">
-      сервисы
+        сервисы
       </h2>
       <p class="service-offer">
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
       <div class="service-inner">
-        <input class="service-inner__input" type="radio"  name="service-inn" id="service-block-1" checked>
-        <input class="service-inner__input" type="radio"  name="service-inn" id="service-block-2">
-        <input class="service-inner__input" type="radio"  name="service-inn" id="service-block-3">
+        <input class="service-inner__input" type="radio" name="service-inn" id="service-block-1" checked>
+        <input class="service-inner__input" type="radio" name="service-inn" id="service-block-2">
+        <input class="service-inner__input" type="radio" name="service-inn" id="service-block-3">
         <div class="service-toggle">
           <label class="service-inner__label" for="service-block-1">Доставка</label>
           <label class="service-inner__label" for="service-block-2">Гарантия</label>
@@ -396,7 +406,8 @@
             </h3>
             <p class="service-block__right-touch-inner">
               Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей
+              гарантии. Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
@@ -435,7 +446,7 @@
             Автотрейдинг
           </li>
           <li class="about__left-item">
-          ЖэлДорЭкспедиция
+            ЖэлДорЭкспедиция
           </li>
         </ul>
         <a class="btn about__left-order__btn" href="about.html">подробнее о компании</a>
@@ -507,20 +518,28 @@
       <ul class="footer-bottom__items">
         <li class="footer-bottom__item">
           <a class="footer-bottom__item-ref footer-bottom__item--vk" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+              <path fill="#FFF"
+                    d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+            </svg>
             <span class="visible-hidden">vkontakte</span>
           </a>
         </li>
         <li class="footer-bottom__item">
           <a class="footer-bottom__item-ref footer-bottom__item--fb" href="#">
             <span class="visible-hidden">facebook</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+            </svg>
           </a>
         </li>
         <li class="footer-bottom__item">
           <a class="footer-bottom__item-ref footer-bottom__item--inst" href="#">
             <span class="visible-hidden">instagramm</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+              <path fill="#FFF"
+                    d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+            </svg>
           </a>
         </li>
       </ul>
@@ -528,14 +547,14 @@
         <p class="footer-bottom__feedback-text">
           Обратная связь:
           <a href="mailto:htmlacademy@mail.ru" class="footer-bottom__feedback-mail">
-                        mail@htlmacademy.ru
-                    </a>
+            mail@htlmacademy.ru
+          </a>
         </p>
         <p class="footer-bottom__developers-text">
           Разработано -
           <a class="footer-bottom__developers-site" href="https://htmlacademy.ru/intensive/htmlcss">
-                        htmlacademy.ru
-                    </a>
+            htmlacademy.ru
+          </a>
         </p>
       </div>
     </div>
@@ -543,7 +562,9 @@
 </footer>
 <div class="contact-us-map">
   <div class="container">
-    <iframe class="contact-us-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sus!4v1560620810294!5m2!1sru!2sus" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe class="contact-us-map__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sus!4v1560620810294!5m2!1sru!2sus"
+            width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
     <img class="contact-us-map__img" src="img/map-big.png" width="940" height="447" alt="Как к нам проехать">
   </div>
   <button class="contact-us-map__close-button">
@@ -607,7 +628,6 @@
     } else {
       login.focus();
     }
-    login.focus();
   });
 
   close.addEventListener("click", function (evt) {
@@ -617,15 +637,15 @@
   });
 
   form.addEventListener("submit", function (evt) {
-    if (!login.value || !email.value) {
-      evt.preventDefault();
-      popup.classList.remove("contact-us-show-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("contact-us-show-error");
-    } else {
+    evt.preventDefault();
+    if (login.value || email.value) {
       if (isStorageSupport) {
         localStorage.setItem("login", login.value);
       }
+    } else {
+      popup.classList.remove("contact-us-show-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("contact-us-show-error");
     }
   });
 
@@ -642,6 +662,9 @@
   var mapLink = document.querySelector(".show-map");
   var mapPopup = document.querySelector(".contact-us-map");
   var mapClose = document.querySelector(".contact-us-map__close-button");
+
+
+
 
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -662,6 +685,8 @@
     }
   });
 </script>
+
+
 
 
 

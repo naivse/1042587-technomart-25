@@ -17,15 +17,17 @@
       <a class="header-top__logo" href="index.html">
         <img class="header-top__logo-img" src="img/logo.svg" width="136.5" height="21.59" alt="Логотип магазина техномарт">
       </a>
-      <form class="header-top__form" action="programm.php" method="post">
-        <input class="header-top__form-input" type="text" name="search" id="header-search" placeholder="Поиск:">
-        <label class="header-top__form-label" for="header-search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-        </label>
-      </form>
-      <a class="header-top__bookmarks" href="bookmarks.html">Закладки: 0</a>
-      <a class="header-top__basket header-top__basket--not-empty" href="basket.html">Корзина: 10</a>
-      <a class="header-top__order header-top__order--catalog" href="order.html">Оформить заказ</a>
+      <div class="header-top__container-form">
+        <form class="header-top__form" action="programm.php" method="post">
+          <input class="header-top__form-input" type="text" name="search" id="header-search" placeholder="Поиск:">
+          <label class="header-top__form-label" for="header-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+          </label>
+        </form>
+        <a class="header-top__bookmarks" href="bookmarks.html">Закладки: 0</a>
+        <a class="header-top__basket header-top__basket--not-empty" href="basket.html">Корзина: 10</a>
+        <a class="header-top__order header-top__order--catalog" href="order.html">Оформить заказ</a>
+      </div>
     </div>
   </div>
   <div class="header-main">
@@ -286,8 +288,8 @@
               </a>
             </div>
           </li>
-          <li class="main-content-catalog__item">
-            <div class="main-content-catalog__item-new main-content-catalog__item-new-icon">
+          <li class="main-content-catalog__item main-content-catalog__item-new-icon">
+            <div class="main-content-catalog__item-new">
               новинка
             </div>
             <div class="main-content-catalog__item-user">
@@ -341,8 +343,8 @@
               </a>
             </div>
           </li>
-          <li class="main-content-catalog__item">
-            <div class="main-content-catalog__item-new main-content-catalog__item-new-icon">
+          <li class="main-content-catalog__item main-content-catalog__item-new-icon">
+            <div class="main-content-catalog__item-new">
               новинка
             </div>
             <div class="main-content-catalog__item-user">
@@ -396,8 +398,8 @@
               </a>
             </div>
           </li>
-          <li class="main-content-catalog__item">
-            <div class="main-content-catalog__item-new main-content-catalog__item-new-icon">
+          <li class="main-content-catalog__item main-content-catalog__item-new-icon">
+            <div class="main-content-catalog__item-new">
               новинка
             </div>
             <div class="main-content-catalog__item-user">
@@ -631,14 +633,24 @@
   </div>
 </div>
 
+
 <script>
-  var link = document.querySelector(".main-content-catalog__item-user-buy");
+
+  var link = document.querySelectorAll(".main-content-catalog__item-user-buy");
   var popup = document.querySelector(".basket-add");
   var close = popup.querySelector(".basket-add__close-button");
+  var closeContinue = popup.querySelector(".basket-add__button-continue");
 
-  link.addEventListener("click", function (evt) {
+  link.forEach(function(evt) {
+    evt.addEventListener("click", function(evt) {
+      evt.preventDefault();
+        popup.classList.add("card-show")
+    })
+  });
+
+  closeContinue.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("card-show");
+    popup.classList.remove("card-show");
   });
 
   close.addEventListener("click", function (evt) {
@@ -649,12 +661,11 @@
   window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("card-show")) {
-        mapPopup.classList.remove("card-show");
+      if (popup.classList.contains("card-show")) {
+        popup.classList.remove("card-show");
       }
     }
   });
-
 </script>
 
 
