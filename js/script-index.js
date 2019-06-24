@@ -1,6 +1,5 @@
 var link = document.querySelector(".about__right-offer-find-us");
 var popup = document.querySelector(".contact-us");
-console.log(popup);
 var close = popup.querySelector(".contact-us__close-button");
 var login = popup.querySelector("[name=login]");
 var form = popup.querySelector("form");
