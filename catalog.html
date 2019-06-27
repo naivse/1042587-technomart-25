@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
@@ -15,7 +15,7 @@
   <div class="header-top">
     <div class="container flex--between">
       <a class="header-top__logo" href="index.html">
-        <img class="header-top__logo-img" src="img/logo.svg" width="136" height="22"
+        <img class="header-top__logo-img" src="img/logo.svg" width="111" height="24"
              alt="Логотип магазина техномарт">
       </a>
       <div class="header-top__container-form">
@@ -36,12 +36,12 @@
   </div>
   <div class="header-main">
     <div class="container flex--between">
-      <h1 class="header-main__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <p class="header-main__info">
-        <a class="header-main__info-telephone" href="tel:+7-812-555-05-55">
-          <span class="header-main__info-telephone-inner">+7 (812) 555-05-55</span>
+      <h1 class="header-main__title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+      <p class="header-main__info header-main__info-catalog">
+        <a class="header-main__info-telephone header-main__info-telephone-catalog" href="tel:+7-812-555-05-55">
+          <span class="header-main__info-telephone-inner header-main__info-telephone-inner-catalog">+7 (812) 555-05-55</span>
         </a>
-        <span class="header-main__info-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
+        <span class="header-main__info-address header-main__info-address-catalog">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
       <div class="header-main__user-catalog">
         <a class="header-main__user-name" href="personalroom.html">
@@ -226,7 +226,7 @@
           </span>
           <ul class="main-content-sort__list">
             <li class="main-content-sort__items">
-              <a class="main-content-sort__item" href="">по цене</a>
+              <a class="main-content-sort__item main-content-sort__item--first" href="">по цене</a>
             </li>
             <li class="main-content-sort__items">
               <a class="main-content-sort__item" href="">по типу</a>
@@ -235,10 +235,14 @@
               <a class="main-content-sort__item" href="">по функционалу</a>
             </li>
             <li class="main-content-sort__items">
-              <a class="main-content-sort__item main-content-sort__item--top" href=""></a>
+              <a class="main-content-sort__item main-content-sort__item--top" href="">
+                <span class="visible-hidden">По возрастанию</span>
+              </a>
             </li>
             <li class="main-content-sort__items">
-              <a class="main-content-sort__item main-content-sort__item--bottom" href=""></a>
+              <a class="main-content-sort__item main-content-sort__item--bottom" href="" aria-label="По возрастанию">
+                <span class="visible-hidden">По убыванию</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -327,6 +331,7 @@
               </a>
             </h3>
             <div class="main-content-catalog__item-price">
+              <span class="main-content-catalog__item-old-price"></span>
               <a class="main-content-catalog__item-new-price" href="#">
                 12500 Р.
               </a>
@@ -414,12 +419,13 @@
               </a>
             </h3>
             <div class="main-content-catalog__item-price">
+              <span class="main-content-catalog__item-old-price"></span>
               <a class="main-content-catalog__item-new-price" href="#">
                 12500 Р.
               </a>
             </div>
           </li>
-          <li class="main-content-catalog__item main-content-catalog__item-new-icon">
+          <li class="main-content-catalog__item main-content-catalog__item-new-icon main-content-catalog__item--row">
             <div class="main-content-catalog__item-new">
               новинка
             </div>
@@ -449,7 +455,7 @@
               </a>
             </div>
           </li>
-          <li class="main-content-catalog__item">
+          <li class="main-content-catalog__item main-content-catalog__item--row">
             <div class="main-content-catalog__item-new">
               новинка
             </div>
@@ -479,7 +485,7 @@
               </a>
             </div>
           </li>
-          <li class="main-content-catalog__item">
+          <li class="main-content-catalog__item main-content-catalog__item--row">
             <div class="main-content-catalog__item-new">
               новинка
             </div>
@@ -501,6 +507,7 @@
               </a>
             </h3>
             <div class="main-content-catalog__item-price">
+              <span class="main-content-catalog__item-old-price"></span>
               <a class="main-content-catalog__item-new-price" href="#">
                 12500 Р.
               </a>
@@ -537,7 +544,7 @@
       </h3>
       <p class="catalog-about__inner">
         Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-        бетоне и камне.
+        бетоне и камне.<br>
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
         шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
         совмещены отбойный молоток и ударная дрель.
@@ -549,7 +556,7 @@
   <div class="footer-top">
     <div class="container footer-top__nav flex--between">
       <a class="footer-top__logo">
-        <img class="footer-top__logo-img" src="img/logo.svg" width="136" height="21"
+        <img class="footer-top__logo-img" src="img/logo.svg" width="138" height="24"
              alt="Логотип магазина техномарт">
       </a>
       <ul class="footer-top__nav-list">
@@ -574,7 +581,7 @@
   <div class="footer-middle">
     <div class="container footer-middle flex--between">
       <p class="footer-middle__address">
-        <span class="footer-middle__address-street">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br></span>
+        <span class="footer-middle__address-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span><br>
         <a class="footer-middle__address-telephone" href="tel:+7-812-555-05-55">+7 (812) 555-05-55</a>
       </p>
       <ul class="footer-middle__nav">
@@ -666,8 +673,8 @@
   </div>
 </div>
 
-<script src="js/script-catalog.js">
-</script>
+<!--<script src="js/script-catalog.js">-->
+<!--</script>-->
 
 
 </body>

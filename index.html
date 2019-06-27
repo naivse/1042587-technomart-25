@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
 
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 
@@ -15,7 +16,7 @@
   <div class="header-top">
     <div class="container flex--between">
       <a class="header-top__logo">
-        <img class="header-top__logo-img" src="img/logo.svg" width="136" height="22" alt="Логотип магазина техномарт">
+        <img class="header-top__logo-img" src="img/logo.svg" width="111" height="24" alt="Логотип магазина техномарт">
       </a>
       <div class="header-top__container-form">
         <form class="header-top__form" action="programm.php" method="post">
@@ -35,12 +36,12 @@
   </div>
   <div class="header-main">
     <div class="container flex--between">
-      <h1 class="header-main__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="header-main__title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
       <p class="header-main__info">
         <a class="header-main__info-telephone" href="tel:+7-812-555-05-55">
           <span class="header-main__info-telephone-inner">+7 (812) 555-05-55</span>
         </a>
-        <span class="header-main__info-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
+        <span class="header-main__info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
       <ul class="header-main__user">
         <li class="header-main__user-enter">
@@ -56,7 +57,7 @@
       </ul>
     </div>
   </div>
-  <div class="header-bottom flex--around">
+  <div class="header-bottom">
     <div class="container header-bottom-container">
       <nav class="header-bottom__nav">
         <ul class="header-bottom__nav-list">
@@ -88,9 +89,12 @@
 </header>
 <main>
   <section class="features">
-    <div class="container flex--between">
+    <div class="container">
       <div class="features-item-top">
-        <div class="features-item features-item--new">
+        <div class="features-item">
+          <div class="features-item-top__flag features-item-top__flag-img">
+            Новинка
+          </div>
           <h2 class="features-title">
             Материалы
           </h2>
@@ -100,6 +104,9 @@
           <a class="features-ref" href="materials.html">на любой вкус</a>
         </div>
         <div class="features-item">
+          <div class="features-item-top__flag">
+            Новинка
+          </div>
           <h2 class="features-title">
             Инструмент
           </h2>
@@ -109,6 +116,9 @@
           <a class="features-ref" href="materials.html">на все случаи</a>
         </div>
         <div class="features-item">
+          <div class="features-item-top__flag">
+            Новинка
+          </div>
           <h2 class="features-title">
             Техника
           </h2>
@@ -130,10 +140,10 @@
           </div>
           <div class="features-slider-inner">
             <h2 class="features-slider-inner__title">
-              дрели
+              перфораторы
             </h2>
             <p class="features-slider-inner__offer">
-              Соседям на радость
+              Настоящие мужские игрушки
             </p>
             <a class="features-slider-inner__ref" href="catalog.html">
               открыть каталог
@@ -145,10 +155,10 @@
           </div>
           <div class="features-slider-inner">
             <h2 class="features-slider-inner__title">
-              перфораторы
+              дрели
             </h2>
             <p class="features-slider-inner__offer">
-              Настоящие мужские игрушки
+              Соседям на радость!
             </p>
             <a class="features-slider-inner__ref" href="catalog.html">
               открыть каталог
@@ -161,6 +171,9 @@
         </div>
         <div class="features-item-bottom__right">
           <div class="features-item">
+            <div class="features-item-top__flag">
+              Новинка
+            </div>
             <h2 class="features-title">
               Скидки 50%
             </h2>
@@ -170,6 +183,9 @@
             <a class="features-ref" href="materials.html">На 350 ТОВАРОВ</a>
           </div>
           <div class="features-item">
+            <div class="features-item-top__flag">
+              Новинка
+            </div>
             <h2 class="features-title">
               Доставка
             </h2>
@@ -215,9 +231,9 @@
             </a>
           </h3>
           <div class="popular-goods__item-price">
-                <span class="popular-goods__item-old-price">
-                  32500 P.
-                </span>
+            <span class="popular-goods__item-old-price">
+              32500 P.
+            </span>
             <a class="popular-goods__item-new-price" href="#">
               25500 Р.
             </a>
@@ -245,9 +261,9 @@
             </a>
           </h3>
           <div class="popular-goods__item-price">
-                <span class="popular-goods__item-old-price">
-                  22500 P.
-                </span>
+            <span class="popular-goods__item-old-price">
+              22500 P.
+            </span>
             <a class="popular-goods__item-new-price" href="#">
               15500 Р.
             </a>
@@ -275,9 +291,9 @@
             </a>
           </h3>
           <div class="popular-goods__item-price">
-                <span class="popular-goods__item-old-price">
-                  30500 P.
-                </span>
+            <span class="popular-goods__item-old-price">
+              30500 P.
+            </span>
             <a class="popular-goods__item-new-price" href="#">
               25500 Р.
             </a>
@@ -305,8 +321,8 @@
             </a>
           </h3>
           <div class="popular-goods__item-price">
-                <span class="popular-goods__item-old-price">
-                </span>
+            <span class="popular-goods__item-old-price">
+            </span>
             <a class="popular-goods__item-new-price" href="#">
               12500 Р.
             </a>
@@ -332,6 +348,7 @@
               <img class="popular-brands__inner-item-img" src="img/bosch.png" width="126" height="37" alt="bosch">
             </a>
           </li>
+
           <li class="popular-brands__inner-items">
             <a class="popular-brands__inner-item" href="#brands.html">
               <img class="popular-brands__inner-item-img" src="img/makita.png" width="123" height="40" alt="makita">
@@ -396,9 +413,9 @@
               доставка
             </h3>
             <p class="service-block__right-touch-inner">
-              Мы с удовольствием доставим ваш товар прямо
+              Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,
+              Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
             </p>
           </div>
@@ -433,8 +450,8 @@
     <div class="container flex--between">
       <h2 class="visible-hidden">О компании "Техномарт"</h2>
       <div class="about__left">
-        <h3 class="about__left-company">компания "техномарт"</h3>
-        <p class="about__left-text">Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для
+        <h3 class="about__left-company">Компания «Техномарт»</h3>
+        <p class="about__left-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
           ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
         </p>
         <p class="about__left-order">Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт
@@ -455,12 +472,12 @@
       </div>
       <div class="about__right">
         <h3 class="about__right-contacts">Контакты</h3>
-        <p class="about__right-offer">Вы можете забрать товар сами,<br>
-          <!--тут либо бр, что вряд-ли, либо h3 + p оборачивать контейнер и задвать ширину--> заехав в наш офис:</p>
+        <p class="about__right-offer">Вы можете забрать товар сами,
+          заехав в наш офис:</p>
         <a class="map show-map" href="#">
           <img class="about__right-map" src="img/map.png" width="300" height="158" alt="our location">
         </a>
-        <a class="about__right-offer-find-us" href="#">заблудились? напишите нам!</a>
+        <a class="btn about__right-offer-find-us" href="#">заблудились? напишите нам!</a>
       </div>
     </div>
   </section>
@@ -469,7 +486,7 @@
   <div class="footer-top">
     <div class="container footer-top__nav flex--between">
       <a class="footer-top__logo">
-        <img class="footer-top__logo-img" src="img/logo.svg" width="136" height="22" alt="Логотип магазина техномарт">
+        <img class="footer-top__logo-img" src="img/logo.svg" width="138" height="24" alt="Логотип магазина техномарт">
       </a>
       <ul class="footer-top__nav-list">
         <li class="footer-top__nav-items">
@@ -493,7 +510,7 @@
   <div class="footer-middle">
     <div class="container footer-middle flex--between">
       <p class="footer-middle__address">
-        <span class="footer-middle__address-street">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br></span>
+        <span class="footer-middle__address-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span><br>
         <a class="footer-middle__address-telephone" href="tel:+7-812-555-05-55">+7 (812) 555-05-55</a>
       </p>
       <ul class="footer-middle__nav">
@@ -591,7 +608,7 @@
         </label>
       </p>
       <p class="contact-us-form__text">
-        <label class="contact-us-form__text-label">Текст письма:<br>
+        <label class="contact-us-form__text-label">Текст письма:
           <textarea class="contact-us-form__text-input" name="comments" placeholder="В свободной форме"></textarea>
         </label>
       </p>
@@ -625,11 +642,11 @@
   </div>
 </div>
 
-<script src="js/script.js">
-</script>
+<!--<script src="js/script.js">-->
+<!--</script>-->
 
-<script src="js/script-index.js">
-</script>
+<!--<script src="js/script-index.js">-->
+<!--</script>-->
 
 
 </body>
