@@ -8,7 +8,7 @@
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 
 </head>
 <body>
@@ -58,7 +58,7 @@
     </div>
   </div>
   <div class="header-bottom">
-    <div class="container header-bottom-container">
+    <div class="container">
       <nav class="header-bottom__nav">
         <ul class="header-bottom__nav-list">
           <li class="header-bottom__nav-items">
@@ -342,13 +342,12 @@
         </a>
       </div>
       <div class="popular-brands__inner">
-        <ul class="popular-brands__list flex--between">
+        <ul class="popular-brands__list">
           <li class="popular-brands__inner-items">
             <a class="popular-brands__inner-item" href="brands.html">
               <img class="popular-brands__inner-item-img" src="img/bosch.png" width="126" height="37" alt="bosch">
             </a>
           </li>
-
           <li class="popular-brands__inner-items">
             <a class="popular-brands__inner-item" href="#brands.html">
               <img class="popular-brands__inner-item-img" src="img/makita.png" width="123" height="40" alt="makita">
@@ -361,7 +360,8 @@
           </li>
           <li class="popular-brands__inner-items">
             <a class="popular-brands__inner-item" href="#brands.html">
-              <img class="popular-brands__inner-item-img" src="img/interscol.png" width="200" height="88"
+              <img class="popular-brands__inner-item-img popular-brands__inner-item--pb" src="img/interscol.png"
+                   width="200" height="88"
                    alt="interscol">
             </a>
           </li>
@@ -484,7 +484,7 @@
 </main>
 <footer class="footer">
   <div class="footer-top">
-    <div class="container footer-top__nav flex--between">
+    <div class="container flex--between">
       <a class="footer-top__logo">
         <img class="footer-top__logo-img" src="img/logo.svg" width="138" height="24" alt="Логотип магазина техномарт">
       </a>
@@ -508,7 +508,7 @@
     </div>
   </div>
   <div class="footer-middle">
-    <div class="container footer-middle flex--between">
+    <div class="container flex--between">
       <p class="footer-middle__address">
         <span class="footer-middle__address-street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span><br>
         <a class="footer-middle__address-telephone" href="tel:+7-812-555-05-55">+7 (812) 555-05-55</a>
@@ -530,7 +530,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container footer-bottom flex--between">
+    <div class="container flex--between">
       <p class="footer-bottom__copyright">© 2010–2019 Компания «Техномарт»<br>
         Все права защищены
       </p>
@@ -591,6 +591,28 @@
     <img class="contact-us-map__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть карту">
   </button>
 </div>
+
+<div class="basket-add">
+  <div class="container container-basket-add">
+    <button class="basket-add__close-button">
+      <img class="basket-add__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть модальное окно">
+    </button>
+    <p class="basket-add__inner">
+      <img class="basket-add__inner-icon" src="img/mark.svg" width="66" height="66" alt="Товар добавлен в корзину">
+      <span class="basket-add__inner-title">
+        Товар добавлен в корзину!
+      </span>
+    </p>
+  </div>
+  <div class="basket-add__buttons">
+    <button class="btn basket-add__button-order" type="submit">
+      оформить заказ
+    </button>
+    <button class="btn basket-add__button-continue" type="button">
+      продолжить покупки
+    </button>
+  </div>
+</div>
 <div class="contact-us">
   <button class="contact-us__close-button">
     <img class="contact-us__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть модальное окно">
@@ -620,34 +642,9 @@
     </div>
   </form>
 </div>
-<div class="basket-add">
-  <div class="container container-basket-add">
-    <button class="basket-add__close-button">
-      <img class="basket-add__close-button-img" width="21" height="21" src="img/close.svg" alt="Закрыть модальное окно">
-    </button>
-    <p class="basket-add__inner">
-      <img class="basket-add__inner-icon" src="img/mark.svg" width="66" height="66" alt="Товар добавлен в корзину">
-      <span class="basket-add__inner-title">
-        Товар добавлен в корзину!
-      </span>
-    </p>
-  </div>
-  <div class="basket-add__buttons">
-    <button class="btn basket-add__button-order" type="submit">
-      оформить заказ
-    </button>
-    <button class="btn basket-add__button-continue" type="button">
-      продолжить покупки
-    </button>
-  </div>
-</div>
 
-<!--<script src="js/script.js">-->
-<!--</script>-->
-
-<!--<script src="js/script-index.js">-->
-<!--</script>-->
-
+<script src="js/script.min.js">
+</script>
 
 </body>
 </html>
