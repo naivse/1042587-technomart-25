@@ -1586,6 +1586,7 @@ a {
 
 .footer-middle__address-street,
 .footer-middle__address-telephone {
+  display: block;
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
@@ -2693,16 +2694,15 @@ a {
 .main-content-sort__item--top {
   position: relative;
   opacity: 1;
-  outline: blue;
+  width: 10px;
+  height: 10px;
 }
 
 .main-content-sort__item--top::after {
   position: absolute;
   content: "";
-  top: -4px;
-  right: -54px;
-  width: 0;
-  height: 0;
+  left: 48px;
+  transform: translate(-50%, -50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 10px solid #ee3643;
@@ -2710,15 +2710,15 @@ a {
 
 .main-content-sort__item--bottom {
   position: relative;
+  width: 10px;
+  height: 10px;
 }
 
 .main-content-sort__item--bottom::before {
   position: absolute;
   content: "";
-  top: -4px;
-  right: -82px;
-  width: 0;
-  height: 0;
+  left: 76px;
+  transform: translate(-50%, -50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #000;
