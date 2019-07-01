@@ -1612,11 +1612,14 @@ a {
 }
 
 .footer-bottom .flex--between {
-  min-height: 107px;
+  padding-top: 20px;
+  padding-bottom: 16px;
   background-color: #293449;
 }
 
 .footer-bottom__copyright {
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 2px;
   font-size: 16px;
   line-height: 18px;
@@ -1633,6 +1636,8 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 132px;
+  margin-top:0;
+  margin-bottom:0;
   margin-left: 43px;
   padding: 0;
   list-style: none;
@@ -2674,6 +2679,14 @@ a {
   margin-left: 61px;
 }
 
+.main-content-sort__items:nth-child(4) {
+  margin-left: 43px;
+}
+
+.main-content-sort__items:nth-child(5) {
+  margin-left: 18px;
+}
+
 .main-content-sort__item {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -2692,33 +2705,41 @@ a {
 }
 
 .main-content-sort__item--top {
+  display: block;
   position: relative;
   opacity: 1;
   width: 10px;
   height: 10px;
+  border-bottom: none;
+}
+
+.main-content-sort__items .main-content-sort__item--top:hover {
+  border-bottom: none;
 }
 
 .main-content-sort__item--top::after {
   position: absolute;
   content: "";
-  left: 48px;
-  transform: translate(-50%, -50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 10px solid #ee3643;
 }
 
 .main-content-sort__item--bottom {
+  display: block;
   position: relative;
   width: 10px;
   height: 10px;
+  border-bottom: none;
+}
+
+.main-content-sort__items .main-content-sort__item--bottom:hover {
+  border-bottom: none;
 }
 
 .main-content-sort__item--bottom::before {
   position: absolute;
   content: "";
-  left: 76px;
-  transform: translate(-50%, -50%);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #000;
@@ -2727,10 +2748,6 @@ a {
 .main-content-sort__item--bottom:active::before {
   position: absolute;
   content: "";
-  top: -4px;
-  right: -80px;
-  width: 0;
-  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #ee3643;
@@ -2739,6 +2756,7 @@ a {
 .main-content-sort__item:hover {
   color: #000;
   opacity: 1;
+  border-bottom: 1px solid #ee3643;
 }
 
 .main-content-sort__item:active {
